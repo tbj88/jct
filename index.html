@@ -983,7 +983,7 @@ async function load(){
   const url = new URLSearchParams(location.search);
   const forced = url.get("lang");
   const saved = localStorage.getItem(BRAND+"_lang");
-  if(forced && ["en","zh","de","es"].includes(forced)) LANG=forced;
+  if(forced && LANG_BY_CODE[forced]) LANG=forced;
   else if(saved) LANG=saved;
   else LANG="en";
 
