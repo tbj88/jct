@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="google" content="notranslate">
+<meta name="description" content="JC Truck Ads (Taizhou Jingchuan Electronics) - Manufacturer of mobile LED advertising trailers, LED trucks, and outdoor digital signage since 2007. CE / TüV Rheinland verified. Global B2B supplier for touring events, OOH advertising and transit agencies in 40+ countries.">
+<link rel="icon" type="image/png" href="logos/jct-favicon.png">
+<link rel="apple-touch-icon" href="logos/jct-logo-256.png">
+<title>JC Truck Ads - Mobile LED Advertising Trailers &amp; Trucks. Since 2007.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;color:#0F172A;background:#F7F9FC;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+
+:root{
+  --c-primary:#0A4A8C;
+  --c-primary-dark:#073565;
+  --c-accent:#F26B1F;
+  --c-ink:#0F172A;
+  --c-ink-soft:#475569;
+  --c-line:#E2E8F0;
+  --c-bg:#F7F9FC;
+  --c-card:#FFFFFF;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.06);
+  --shadow-md:0 4px 14px rgba(15,23,42,.08);
+  --shadow-lg:0 16px 40px rgba(15,23,42,.12);
+  --radius:10px;
+}
+
+/* === Header === */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--c-line)}
+.hdr-inner{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:28px}
+.brand-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.3px;color:var(--c-primary)}
+.brand-logo .gear{width:42px;height:42px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.brand-logo .gear img{width:100%;height:100%;object-fit:contain}
+.nav{display:flex;gap:6px;flex:1}
+.nav a{padding:8px 14px;border-radius:8px;font-size:14.5px;font-weight:600;color:var(--c-ink-soft);transition:all .15s}
+.nav a:hover{background:#EEF2F7;color:var(--c-primary)}
+.nav a.staff-only,.nav a.admin-only{display:none}
+body.staff-mode .nav a.staff-only,body.admin-mode .nav a.staff-only,body.admin-mode .nav a.admin-only{display:inline-block}
+.lang-wrap{position:relative}
+.lang-btn{display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--c-line);border-radius:8px;font-size:14px;background:#fff;cursor:pointer;transition:all .15s}
+.lang-btn:hover{border-color:var(--c-primary);color:var(--c-primary)}
+/* 全屏语言弹窗 */
+.lang-modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:200;display:none;align-items:flex-start;justify-content:center;padding:60px 20px 40px;overflow-y:auto;backdrop-filter:blur(4px)}
+.lang-modal-backdrop.open{display:flex;animation:fadeIn .2s ease}
+.lang-modal{background:#fff;border-radius:14px;box-shadow:var(--shadow-lg);width:100%;max-width:1100px;padding:32px 40px 36px;position:relative;animation:slideUp .25s ease}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.lang-modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:8px;background:transparent;color:var(--c-ink-soft);font-size:22px;display:flex;align-items:center;justify-content:center}
+.lang-modal-close:hover{background:#F1F5F9;color:var(--c-ink)}
+.lang-modal h3{font-size:22px;font-weight:800;letter-spacing:-.3px;margin-bottom:6px;color:var(--c-ink)}
+.lang-modal .lang-sub{font-size:14px;color:var(--c-ink-soft);margin-bottom:24px}
+.lang-modal .lang-group{margin-bottom:24px}
+.lang-modal .lang-group-title{font-size:11.5px;font-weight:800;letter-spacing:2px;color:var(--c-primary);text-transform:uppercase;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--c-line)}
+.lang-modal .lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px 16px}
+.lang-modal .lang-row{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14.5px;color:var(--c-ink);transition:all .12s;border:1px solid transparent}
+.lang-modal .lang-row:hover{background:#F8FAFC;border-color:var(--c-line)}
+.lang-modal .lang-row.active{background:#EEF2F7;border-color:var(--c-primary);font-weight:700;color:var(--c-primary)}
+.lang-modal .lang-row .flag{font-size:22px;line-height:1}
+.lang-modal .lang-row .label{flex:1;min-width:0}
+.lang-modal .lang-row .check{color:var(--c-primary);font-weight:800}
+@media(max-width:900px){.lang-modal{padding:24px 22px 28px}.lang-modal .lang-grid{grid-template-columns:repeat(2,1fr)}.lang-modal h3{font-size:19px}}
+@media(max-width:500px){.lang-modal .lang-grid{grid-template-columns:1fr}}
+/* RTL 阿语 */
+[dir="rtl"] .nav{flex-direction:row-reverse}
+[dir="rtl"] .hdr-inner{direction:rtl}
+[dir="rtl"] .lang-modal{direction:rtl;text-align:right}
+
+/* === Hero === */
+.hero{position:relative;overflow:hidden;background:#0F172A}
+.hero-slide{position:relative;aspect-ratio:21/9;min-height:420px;max-height:680px;width:100%;display:none}
+.hero-slide.active{display:block;animation:fadeIn .6s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.hero-slide img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,23,42,.85) 0%,rgba(15,23,42,.4) 60%,rgba(15,23,42,.1) 100%)}
+.hero-content{position:absolute;inset:0;display:flex;align-items:center;padding:0 7%;color:#fff}
+.hero-text{max-width:640px}
+.kicker{display:inline-block;padding:5px 12px;background:rgba(242,107,31,.95);font-size:12px;font-weight:700;letter-spacing:1.5px;border-radius:4px;margin-bottom:18px}
+.hero h1{font-size:clamp(28px,4vw,52px);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.5px}
+.hero p{font-size:clamp(15px,1.4vw,18px);opacity:.92;margin-bottom:28px;max-width:560px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:700;font-size:14.5px;transition:all .15s;border:2px solid transparent}
+.btn-primary{background:var(--c-accent);color:#fff}
+.btn-primary:hover{background:#D9591A;transform:translateY(-1px)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.4);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+.hero-dots{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5}
+.hero-dots button{width:32px;height:4px;background:rgba(255,255,255,.4);border-radius:2px;transition:all .2s}
+.hero-dots button.active{background:#fff;width:48px}
+
+/* === Sections === */
+.section{padding:80px 24px}
+.section-inner{max-width:1280px;margin:0 auto}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--c-accent);text-transform:uppercase;margin-bottom:10px;display:inline-block}
+.eyebrow.linklike{cursor:pointer;transition:color .15s}
+.eyebrow.linklike:hover{color:var(--c-primary)}
+.h2{font-size:clamp(26px,3vw,38px);font-weight:800;letter-spacing:-.4px;margin-bottom:14px;color:var(--c-ink)}
+.lead{font-size:17px;color:var(--c-ink-soft);max-width:680px;margin-bottom:48px}
+.section-head{text-align:center}
+.section-head .lead{margin-left:auto;margin-right:auto}
+
+/* === Stats === */
+.stats{background:linear-gradient(135deg,var(--c-primary) 0%,var(--c-primary-dark) 100%);padding:50px 24px;color:#fff}
+.stats-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.stat-item{text-align:center}
+.stat-value{font-size:clamp(32px,3.4vw,48px);font-weight:800;letter-spacing:-.5px;color:#fff;line-height:1}
+.stat-label{font-size:13.5px;opacity:.85;margin-top:10px;font-weight:500}
+@media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:28px;max-width:520px}}
+
+/* === Why grid === */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why-card{background:var(--c-card);padding:30px 26px;border-radius:var(--radius);border:1px solid var(--c-line);transition:all .2s;cursor:pointer}
+.why-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--c-primary)}
+.why-card .icon{display:inline-flex;width:48px;height:48px;border-radius:10px;background:#EEF2F7;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px;color:var(--c-primary)}
+.why-card h3{font-size:18px;font-weight:700;margin-bottom:10px;color:var(--c-ink)}
+.why-card p{font-size:14.5px;color:var(--c-ink-soft);margin-bottom:14px}
+.why-card .why-cta{font-size:13.5px;font-weight:700;color:var(--c-primary);display:inline-flex;align-items:center;gap:6px}
+.why-card:hover .why-cta{color:var(--c-accent)}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.why-grid{grid-template-columns:1fr}}
+
+/* === Cats === */
+.cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cat-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;cursor:pointer;background:#1E293B}
+.cat-card img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.cat-card:hover img{transform:scale(1.05)}
+.cat-card-info{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,23,42,.92) 0%,rgba(15,23,42,.3) 60%,transparent 100%);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.cat-card-info h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.cat-card-info p{font-size:14px;opacity:.9}
+@media(max-width:900px){.cats-grid{grid-template-columns:1fr;gap:16px}.cat-card{aspect-ratio:16/9}}
+
+/* === Partners === */
+.partners-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.partner-card{background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--radius);padding:24px 16px;text-align:center;transition:all .15s}
+.partner-card:hover{border-color:var(--c-primary);transform:translateY(-2px)}
+.partner-icon{font-size:36px;margin-bottom:10px}
+.partner-name{font-size:13.5px;font-weight:600;color:var(--c-ink)}
+@media(max-width:900px){.partners-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:500px){.partners-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* === Regions === */
+.regions-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.region-card{background:linear-gradient(135deg,var(--c-card) 0%,#F1F5F9 100%);border:1px solid var(--c-line);border-radius:var(--radius);padding:28px 22px;text-align:center}
+.region-flag{font-size:42px;margin-bottom:14px;display:block}
+.region-name{font-size:17px;font-weight:700;color:var(--c-primary);margin-bottom:6px}
+.region-sub{font-size:13px;color:var(--c-ink-soft)}
+@media(max-width:900px){.regions-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* === Catalog page === */
+/* Catalog 页顶部紧凑 */
+#page-catalog>.section{padding-top:0;padding-bottom:60px}
+/* Sticky 搜索/筛选区：吸附在顶部导航下方，跟随滚动 */
+.catalog-sticky{position:sticky;top:69px;z-index:30;background:rgba(247,249,252,.94);backdrop-filter:saturate(180%) blur(10px);margin:0 -24px 24px;padding:18px 24px 16px;border-bottom:1px solid var(--c-line);transition:box-shadow .2s}
+.catalog-sticky.is-stuck{box-shadow:0 4px 14px rgba(15,23,42,.08)}
+.catalog-sticky .page-back{margin-bottom:10px}
+.catalog-sticky .section-head{margin-bottom:10px}
+.catalog-sticky .section-head .h2{font-size:clamp(20px,2.4vw,28px);margin-bottom:0}
+.catalog-toolbar{display:flex;gap:10px;align-items:center;margin-bottom:0;flex-wrap:wrap}
+.catalog-toolbar input{flex:1;min-width:240px;padding:11px 14px;border:1px solid var(--c-line);border-radius:8px;font-size:14px;background:#fff}
+.catalog-toolbar select{padding:11px 14px;border:1px solid var(--c-line);border-radius:8px;font-size:14px;background:#fff}
+@media(max-width:900px){.catalog-sticky{top:62px;padding:10px 16px 12px;margin:0 -16px 16px}}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product-card{background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--radius);overflow:hidden;transition:all .2s;cursor:pointer}
+.product-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--c-primary)}
+.product-card-img{aspect-ratio:4/3;background:#F1F5F9;overflow:hidden}
+.product-card-img img{width:100%;height:100%;object-fit:cover}
+.product-card-body{padding:18px}
+.product-card-sku{font-size:11.5px;color:var(--c-accent);font-weight:700;letter-spacing:1px;margin-bottom:6px}
+.product-card-name{font-size:15.5px;font-weight:700;margin-bottom:10px;color:var(--c-ink);line-height:1.35}
+.product-card-meta{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--c-ink-soft)}
+.product-card-price{font-weight:700;color:var(--c-primary)}
+/* === Variant series badge on catalog card === */
+.product-card-variant-badge{display:inline-block;font-size:11px;font-weight:700;color:var(--c-primary);background:rgba(62,112,150,.10);border:1px solid rgba(62,112,150,.25);padding:3px 9px;border-radius:999px;letter-spacing:.3px;margin-top:8px}
+@media(max-width:900px){.products-grid{grid-template-columns:1fr 1fr;gap:16px}}
+@media(max-width:600px){.products-grid{grid-template-columns:1fr}}
+
+/* === Product Detail === */
+.pd-container{max-width:1280px;margin:0 auto;padding:24px 24px 48px}
+/* 返回键固定吸顶 */
+.pd-back-wrap{position:sticky;top:69px;z-index:25;background:rgba(247,249,252,.94);backdrop-filter:saturate(180%) blur(10px);margin:0 -24px 20px;padding:14px 24px;border-bottom:1px solid var(--c-line)}
+.pd-back{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--c-primary);padding:9px 16px;background:#fff;border:1px solid var(--c-line);border-radius:8px;transition:all .15s}
+.pd-back:hover{background:var(--c-primary);color:#fff;border-color:var(--c-primary);transform:translateX(-2px)}
+@media(max-width:900px){.pd-back-wrap{top:62px;padding:10px 16px;margin:0 -16px 14px}}
+
+/* === Back-to-home button (catalog / certs / partners 等子页用) === */
+.page-back{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--c-primary);margin-bottom:20px;padding:9px 16px;background:#fff;border:1px solid var(--c-line);border-radius:8px;transition:all .15s;cursor:pointer}
+.page-back:hover{background:var(--c-primary);color:#fff;border-color:var(--c-primary);transform:translateX(-2px)}
+.pd-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.pd-gallery{position:sticky;top:90px;align-self:start}
+/* === Main product image with hover-zoom magnifier (整合后唯一规则块) === */
+.pd-main-img{
+  aspect-ratio:1/1;
+  background:#fff;
+  border:1px solid var(--c-line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  position:relative;
+  cursor:zoom-in;
+}
+.pd-main-img img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:20px;
+  box-sizing:border-box;       /* 关键：让 padding 算在 width/height 内，不溢出 */
+  transition:transform .15s ease-out;
+  will-change:transform;
+}
+.pd-main-img.zoom-active{cursor:zoom-out}
+.pd-main-img.zoom-active img{transition:none}
+.pd-zoom-hint{
+  position:absolute;top:12px;right:12px;
+  background:rgba(0,0,0,.65);color:#fff;
+  font-size:11px;font-weight:600;letter-spacing:.4px;
+  padding:5px 10px;border-radius:999px;
+  pointer-events:none;opacity:0;transition:opacity .2s;
+  z-index:2;display:flex;align-items:center;gap:5px;
+}
+.pd-main-img:hover .pd-zoom-hint{opacity:1}
+.pd-main-img.zoom-active .pd-zoom-hint{opacity:.85}
+.pd-zoom-hint svg{width:12px;height:12px}
+/* 触屏设备禁用 hover-zoom（防 mobile 抖动） */
+@media(hover:none){
+  .pd-main-img{cursor:pointer}
+  .pd-main-img img{transition:none;padding:20px}
+  .pd-main-img:hover img{transform:none !important}
+  .pd-zoom-hint{display:none}
+}
+.pd-thumbs{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.pd-thumb{width:72px;height:72px;border:2px solid var(--c-line);border-radius:6px;overflow:hidden;cursor:pointer;background:#fff}
+.pd-thumb.active{border-color:var(--c-primary)}
+.pd-thumb img{width:100%;height:100%;object-fit:contain;padding:4px}
+.pd-info h1{font-size:30px;font-weight:800;margin-bottom:10px;letter-spacing:-.4px}
+.pd-info .pd-sku{color:var(--c-accent);font-weight:700;letter-spacing:1px;font-size:13px;margin-bottom:18px}
+.pd-price-row{display:flex;gap:32px;align-items:baseline;padding:18px 0;border-top:1px solid var(--c-line);border-bottom:1px solid var(--c-line);margin-bottom:24px}
+.pd-price-row .label{font-size:13px;color:var(--c-ink-soft);font-weight:600}
+.pd-price-row .val{font-size:22px;font-weight:800;color:var(--c-primary)}
+.pd-quote-btn{display:flex;gap:10px;margin-bottom:32px}
+.pd-quote-btn .btn{flex:1;justify-content:center}
+/* === Variant size selector === */
+.pd-variant-wrap{margin:0 0 24px}
+.pd-variant-label{font-size:13px;font-weight:700;color:var(--c-ink-soft);text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px;display:flex;align-items:baseline;gap:10px}
+.pd-variant-label .pd-variant-current{color:var(--c-primary);font-size:14px;letter-spacing:0;text-transform:none}
+.pd-variant-grid{display:flex;flex-wrap:wrap;gap:8px}
+.pd-variant-btn{padding:10px 14px;border:1.5px solid var(--c-line);border-radius:8px;background:#fff;font-size:13px;font-weight:700;color:var(--c-ink);cursor:pointer;transition:all .15s;min-width:64px;text-align:center;white-space:nowrap}
+.pd-variant-btn:hover{border-color:var(--c-primary);color:var(--c-primary)}
+.pd-variant-btn.active{background:var(--c-primary);border-color:var(--c-primary);color:#fff;box-shadow:0 4px 12px rgba(62,112,150,.25)}
+.pd-variant-hint{font-size:12px;color:var(--c-ink-soft);margin-top:10px;line-height:1.5}
+.pd-specs-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--c-line);border-radius:var(--radius);overflow:hidden}
+.pd-specs-table td{padding:13px 18px;font-size:14px;border-bottom:1px solid var(--c-line)}
+.pd-specs-table tr:last-child td{border-bottom:0}
+.pd-specs-table td:first-child{color:var(--c-ink-soft);font-weight:600;width:40%;background:#FAFBFC}
+.pd-specs-table td:last-child{font-weight:600;color:var(--c-ink)}
+.pd-detail-wrap{margin-top:56px;padding-top:36px;border-top:1px solid var(--c-line)}
+.pd-detail-wrap h3{font-size:18px;font-weight:800;color:var(--c-ink);margin-bottom:18px;letter-spacing:.3px}
+.pd-detail-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pd-detail-imgs .pd-detail-item{position:relative;aspect-ratio:1/1;background:#FAFBFC;border:1px solid var(--c-line);border-radius:var(--radius);overflow:hidden;cursor:zoom-in;transition:all .15s}
+.pd-detail-imgs .pd-detail-item:hover{border-color:var(--c-primary);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.pd-detail-imgs .pd-detail-item img{width:100%;height:100%;object-fit:contain;padding:8px}
+.pd-detail-imgs .pd-detail-label{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:linear-gradient(0deg,rgba(15,23,42,.78),rgba(15,23,42,0));color:#fff;font-size:12px;font-weight:600;text-align:center;letter-spacing:.3px}
+@media(max-width:900px){.pd-detail-imgs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.pd-detail-imgs{grid-template-columns:1fr 1fr;gap:10px}}
+/* 灯箱（点细节图放大查看）*/
+.pd-lightbox{position:fixed;inset:0;background:rgba(15,23,42,.92);z-index:300;display:none;align-items:center;justify-content:center;padding:40px;cursor:zoom-out}
+.pd-lightbox.open{display:flex;animation:fadeIn .2s ease}
+.pd-lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.pd-lightbox .pd-lightbox-close{position:absolute;top:20px;right:24px;color:#fff;font-size:30px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:8px;cursor:pointer;background:rgba(0,0,0,.4)}
+.pd-lightbox .pd-lightbox-close:hover{background:rgba(0,0,0,.7)}
+@media(max-width:900px){.pd-grid{grid-template-columns:1fr;gap:28px}.pd-gallery{position:static}}
+
+/* === Certs === */
+.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cert-card{background:var(--c-card);border:1px solid var(--c-line);border-radius:var(--radius);padding:30px;text-align:center}
+.cert-card .cert-img{width:64px;height:64px;margin:0 auto 18px;background:linear-gradient(135deg,var(--c-primary),var(--c-accent));border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:30px}
+.cert-card h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.cert-card p{font-size:14px;color:var(--c-ink-soft);margin-bottom:16px}
+.cert-verify-btn{display:inline-block;padding:8px 16px;background:#EEF2F7;border-radius:6px;font-size:13px;font-weight:600;color:var(--c-primary)}
+@media(max-width:900px){.certs-grid{grid-template-columns:1fr;gap:16px}}
+
+/* === Staff/Admin internal panels === */
+.intel-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.intel-item{background:#fff;border:1px solid var(--c-line);border-radius:var(--radius);padding:22px}
+.intel-cat{display:inline-block;padding:3px 10px;background:#EEF2F7;color:var(--c-primary);font-size:11px;font-weight:700;letter-spacing:1px;border-radius:4px;margin-bottom:10px}
+.intel-t{font-size:16px;font-weight:700;margin-bottom:8px}
+.intel-c{font-size:14px;color:var(--c-ink-soft);line-height:1.6}
+@media(max-width:900px){.intel-list{grid-template-columns:1fr}}
+
+/* === Footer === */
+.footer{background:#0F172A;color:#94A3B8;padding:60px 24px 28px}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer h4{color:#fff;font-size:15px;font-weight:700;margin-bottom:16px}
+.footer .ft-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:20px;margin-bottom:12px}
+.footer .ft-brand .gear{width:44px;height:44px;background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:4px}
+.footer .ft-brand .gear img{width:100%;height:100%;object-fit:contain}
+.footer p,.footer a{font-size:14px;line-height:1.8;color:#94A3B8}
+.footer a:hover{color:#fff}
+.footer ul{list-style:none}
+.footer-bottom{border-top:1px solid #1E293B;padding-top:24px;display:flex;justify-content:space-between;font-size:13px;flex-wrap:wrap;gap:12px}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
+
+/* === Admin edit affordances === */
+.edit-affordance{display:none;position:absolute;top:8px;right:8px;background:var(--c-accent);color:#fff;padding:6px 10px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;z-index:10;box-shadow:var(--shadow-md)}
+body.admin-mode .editable{position:relative;outline:0 dashed transparent;transition:outline .15s}
+body.admin-mode .editable:hover{outline:2px dashed var(--c-primary);outline-offset:4px}
+body.admin-mode .editable:hover .edit-affordance{display:block}
+
+/* === Modal === */
+.modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.6);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
+.modal-backdrop.open{display:flex}
+.modal{background:#fff;border-radius:12px;box-shadow:var(--shadow-lg);width:100%;max-width:760px;max-height:calc(100vh - 80px);overflow-y:auto}
+.modal-head{padding:20px 24px;border-bottom:1px solid var(--c-line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:5}
+.modal-head h3{font-size:18px;font-weight:700}
+.modal-close{font-size:24px;color:var(--c-ink-soft);width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:6px}
+.modal-close:hover{background:#F1F5F9}
+.modal-body{padding:24px}
+.modal-foot{padding:16px 24px;border-top:1px solid var(--c-line);display:flex;justify-content:flex-end;gap:10px;position:sticky;bottom:0;background:#fff}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:700;color:var(--c-ink);margin-bottom:6px}
+.field input,.field textarea,.field select{width:100%;padding:10px 12px;border:1px solid var(--c-line);border-radius:6px;font:inherit;font-size:14px;background:#fff}
+.field textarea{min-height:80px;resize:vertical}
+.field-row{display:flex;gap:8px;align-items:center}
+.field-row input{flex:1}
+.translate-btn,.upload-btn,.expand-btn{padding:9px 12px;background:#EEF2F7;border-radius:6px;font-size:12px;font-weight:700;color:var(--c-primary);white-space:nowrap}
+.translate-btn:hover,.upload-btn:hover,.expand-btn:hover{background:#DBE4EF}
+.lang-extra{display:none;padding:12px;background:#F8FAFC;border-radius:6px;margin-top:8px}
+.lang-extra.open{display:block}
+.lang-extra .field{margin-bottom:10px}
+.lang-extra label{font-size:11.5px;color:var(--c-ink-soft);text-transform:uppercase}
+
+.list-editor{margin-bottom:16px}
+.list-item{border:1px solid var(--c-line);border-radius:8px;padding:14px;margin-bottom:10px;display:flex;gap:14px;align-items:flex-start}
+.list-item-thumb{width:64px;height:64px;background:#F1F5F9;border-radius:6px;overflow:hidden;flex-shrink:0}
+.list-item-thumb img{width:100%;height:100%;object-fit:cover}
+.list-item-body{flex:1;min-width:0}
+.list-item-title{font-weight:700;margin-bottom:4px}
+.list-item-sub{font-size:13px;color:var(--c-ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.list-item-actions{display:flex;gap:6px;flex-shrink:0}
+.list-item-actions button{padding:6px 10px;background:#F1F5F9;border-radius:6px;font-size:12px;font-weight:600}
+.list-item-actions button.del{background:#FEE2E2;color:#B91C1C}
+.add-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:var(--c-primary);color:#fff;border-radius:6px;font-weight:700;font-size:13px}
+
+.btn-save{padding:10px 18px;background:var(--c-primary);color:#fff;border-radius:6px;font-weight:700;font-size:14px}
+.btn-cancel{padding:10px 18px;background:#F1F5F9;color:var(--c-ink-soft);border-radius:6px;font-weight:600;font-size:14px}
+
+/* === Toast === */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:14px 22px;background:#0F172A;color:#fff;border-radius:8px;box-shadow:var(--shadow-lg);font-size:14px;z-index:200;display:none;animation:slideUp .25s ease}
+.toast.show{display:block}
+@keyframes slideUp{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
+
+/* === Mode badge === */
+.mode-badge{position:fixed;top:80px;right:20px;padding:6px 12px;background:var(--c-accent);color:#fff;font-size:11.5px;font-weight:800;letter-spacing:1.5px;border-radius:4px;z-index:40;display:none}
+body.staff-mode .mode-badge.staff,body.admin-mode .mode-badge.admin{display:block}
+
+/* Hidden sections (route switching) */
+.page{display:none}
+.page.active{display:block}
+
+/* === Anti machine-translate hard guards === */
+.notr,.notr *{}
+[translate="no"]{-webkit-text-translate:none}
+
+/* Mobile nav */
+.menu-toggle{display:none;font-size:24px;padding:6px 10px}
+@media(max-width:900px){
+  .menu-toggle{display:block}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:14px;gap:4px;border-bottom:1px solid var(--c-line);box-shadow:var(--shadow-md)}
+  .nav.open{display:flex}
+  .nav a{padding:12px 14px}
+  .hdr-inner{position:relative}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-inner">
+    <a class="brand-logo" href="#" onclick="route('home');return false" translate="no">
+      <span class="gear"><img src="logos/jct-logo-256.png" alt="JC Truck Ads"></span>
+      <span id="brand-name" translate="no">JC Truck Ads</span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#" onclick="route('home');return false" data-uk="navHome">Home</a>
+      <a href="#" onclick="route('certs');return false" data-uk="navCerts">Credentials</a>
+      <a href="#" onclick="route('catalog');return false" data-uk="navCatalog">Product Catalog</a>
+      <a href="#" onclick="route('partners');return false" data-uk="navPartners">Partner Industries</a>
+      <a href="#" onclick="route('intel');return false" class="staff-only" data-uk="navStaff">Intel & Persona</a>
+      <a href="#" onclick="route('sop');return false" class="staff-only" data-uk="navSop">Scripts & SOP</a>
+    </nav>
+    <div class="lang-wrap" translate="no">
+      <button class="lang-btn" onclick="openLangModal()" id="langBtnLabel" translate="no">🌐 English ▾</button>
+    </div>
+    <button class="menu-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<div class="mode-badge staff">STAFF MODE</div>
+<div class="mode-badge admin">ADMIN MODE</div>
+
+<!-- 全屏语言选择弹窗 -->
+<div class="lang-modal-backdrop" id="langModal" translate="no" onclick="if(event.target===this)closeLangModal()">
+  <div class="lang-modal" role="dialog" aria-labelledby="langModalTitle">
+    <button class="lang-modal-close" onclick="closeLangModal()" aria-label="Close">×</button>
+    <h3 id="langModalTitle">Choose Your Language</h3>
+    <p class="lang-sub">Select your preferred language to browse our products.</p>
+    <div id="langModalBody"></div>
+  </div>
+</div>
+
+<!-- ===== HOME ===== -->
+<main id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero editable" data-edit="hero" id="heroSec">
+    <span class="edit-affordance">✎ Edit Hero</span>
+    <div id="heroSlides"></div>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats editable" data-edit="stats">
+    <span class="edit-affordance">✎ Edit Stats</span>
+    <div class="stats-grid" id="statsGrid"></div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section editable" data-edit="why" id="whySec">
+    <span class="edit-affordance">✎ Edit Why Cards</span>
+    <div class="section-inner">
+      <div translate="no" class="section-head">
+        <div class="eyebrow" data-uk="eyebrowWhy">WHY US</div>
+        <h2 translate="no" class="h2" id="whyTitle"></h2>
+        <p class="lead" id="whySub"></p>
+      </div>
+      <div class="why-grid" id="whyGrid"></div>
+    </div>
+  </section>
+
+  <!-- CATS -->
+  <section class="section editable" data-edit="cats" style="background:#fff" id="catsSec">
+    <span class="edit-affordance">✎ Edit Categories</span>
+    <div class="section-inner">
+      <div translate="no" class="section-head">
+        <div class="eyebrow">CATALOG</div>
+        <h2 translate="no" class="h2" id="catsTitle"></h2>
+        <p class="lead" id="catsSub"></p>
+      </div>
+      <div class="cats-grid" id="catsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="section editable" data-edit="partners" id="partnersHomeSec">
+    <span class="edit-affordance">✎ Edit Partners</span>
+    <div class="section-inner">
+      <div translate="no" class="section-head">
+        <div class="eyebrow">CUSTOMERS</div>
+        <h2 translate="no" class="h2" id="partnersTitle"></h2>
+        <p class="lead" id="partnersSub"></p>
+      </div>
+      <div class="partners-grid" id="partnersGrid"></div>
+    </div>
+  </section>
+
+  <!-- REGIONS -->
+  <section class="section editable" data-edit="regions" style="background:#fff" id="regionsSec">
+    <span class="edit-affordance">✎ Edit Regions</span>
+    <div class="section-inner">
+      <div translate="no" class="section-head">
+        <div class="eyebrow">GLOBAL REACH</div>
+        <h2 translate="no" class="h2" id="regionsTitle"></h2>
+        <p class="lead" id="regionsSub"></p>
+      </div>
+      <div class="regions-grid" id="regionsGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== CATALOG ===== -->
+<main id="page-catalog" class="page">
+  <section class="section">
+    <div class="section-inner">
+      <div class="catalog-sticky" id="catalogSticky">
+        <a class="page-back" href="#" onclick="route('home');return false" data-uk="backHome">← Back to Home</a>
+        <div class="catalog-toolbar">
+          <input id="catalogSearch" data-uk-placeholder="catalogSearchHint" placeholder="Search by name or SKU..." oninput="renderCatalog();clearCatalogState()">
+          <select id="catalogFilter" onchange="renderCatalog();clearCatalogState()"></select>
+        </div>
+      </div>
+      <div class="products-grid editable" data-edit="products" id="productsGrid">
+        <span class="edit-affordance">✎ Edit Products</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== PRODUCT DETAIL ===== -->
+<main id="page-product" class="page">
+  <div class="pd-container" id="pdContainer"></div>
+</main>
+
+<!-- ===== CERTS ===== -->
+<main id="page-certs" class="page">
+  <section class="section">
+    <div class="section-inner">
+      <a class="page-back" href="#" onclick="route('home');return false" data-uk="backHome">← Back to Home</a>
+      <div translate="no" class="section-head">
+        <h2 translate="no" class="h2" id="certsTitle"></h2>
+      </div>
+      <div class="certs-grid editable" data-edit="certs" id="certsGrid">
+        <span class="edit-affordance">✎ Edit Credentials</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== PARTNERS PAGE ===== -->
+<main id="page-partners" class="page">
+  <section class="section">
+    <div class="section-inner">
+      <a class="page-back" href="#" onclick="route('home');return false" data-uk="backHome">← Back to Home</a>
+      <div translate="no" class="section-head">
+        <h2 translate="no" class="h2" id="partnersPageTitle"></h2>
+        <p class="lead" id="partnersPageSub"></p>
+      </div>
+      <div class="partners-grid" id="partnersPageGrid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== STAFF: INTEL ===== -->
+<main id="page-intel" class="page">
+  <section class="section">
+    <div class="section-inner">
+      <a class="page-back" href="#" onclick="route('home');return false" data-uk="backHome">← Back to Home</a>
+      <div translate="no" class="section-head" style="text-align:left">
+        <h2 translate="no" class="h2">Customer Intelligence & Personas</h2>
+        <p class="lead">Staff-only insights, scraped from CRM and field intel. Updated as deals progress.</p>
+      </div>
+      <div class="intel-list editable" data-edit="staff_intel" id="intelList">
+        <span class="edit-affordance">✎ Edit Intel</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== STAFF: SOP ===== -->
+<main id="page-sop" class="page">
+  <section class="section">
+    <div class="section-inner">
+      <a class="page-back" href="#" onclick="route('home');return false" data-uk="backHome">← Back to Home</a>
+      <div translate="no" class="section-head" style="text-align:left">
+        <h2 translate="no" class="h2">Sales Scripts & SOP</h2>
+        <p class="lead">Standardized response templates and follow-up procedures.</p>
+      </div>
+      <div class="intel-list editable" data-edit="staff_sop" id="sopList">
+        <span class="edit-affordance">✎ Edit SOP</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="ft-brand" translate="no"><span class="gear"><img src="logos/jct-logo-256.png" alt="JC Truck Ads"></span> JC Truck Ads</div>
+        <p id="ft-fullName"></p>
+        <p style="margin-top:10px" id="ft-tagline"></p>
+      </div>
+      <div>
+        <h4 data-uk="ftContact">Contact</h4>
+        <ul>
+          <li><a href="#" id="ft-email"></a></li>
+          <li id="ft-phone"></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-uk="ftAddress">Address</h4>
+        <p id="ft-address"></p>
+      </div>
+      <div>
+        <h4 data-uk="ftCapabilities">Capabilities</h4>
+        <ul>
+          <li>Engineering & Manufacturing</li>
+          <li>Global Installation</li>
+          <li>After-Sales Service</li>
+          <li>Spare Parts Logistics</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="ft-year"></span> <span id="ft-brand-name" translate="no">XinNeng Silicone</span>. <span id="ft-rights"></span></span>
+      <span id="ft-bottom-tagline" translate="no">Mobile LED. Anywhere. Anytime. Since 2007.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-backdrop" id="modal">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modalTitle">Edit</h3>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save" onclick="saveModal()">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+ * Brand Site - Single-File SPA
+ * 3 levels: public / ?staff / ?admin
+ * 4 languages: en/zh/de/es
+ * Admin uses GitHub Contents API for persistence
+ * ============================================================ */
+
+const BRAND = "jct";
+const REPO_OWNER = "tbj88";
+const REPO_NAME = "jct";
+const REPO_BRANCH = "main";
+
+let DATA = null;
+let LANG = "en";
+let CURRENT_PAGE = "home";
+let CURRENT_EDIT = null;
+let CURRENT_PRODUCT = null;
+
+const Q = (s,r)=> (r||document).querySelector(s);
+const QA = (s,r)=> Array.from((r||document).querySelectorAll(s));
+
+function L(v){
+  if(v && typeof v==="object") return v[LANG] || v.en || v.zh || v.de || v.es || "";
+  return v==null?"":String(v);
+}
+
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
+
+/* ===== Mode detection ===== */
+function getMode(){
+  const p = new URLSearchParams(location.search);
+  if(p.has("admin")) return "admin";
+  if(p.has("staff")) return "staff";
+  return "public";
+}
+function isAdmin(){
+  return getMode()==="admin" && localStorage.getItem(BRAND+"_admin_token");
+}
+function isStaffMode(){
+  return (getMode()==="staff" && localStorage.getItem(BRAND+"_staff_ok")==="1") || isAdmin();
+}
+function applyModeClass(){
+  document.body.classList.remove("staff-mode","admin-mode");
+  if(isAdmin()) document.body.classList.add("admin-mode");
+  else if(isStaffMode()) document.body.classList.add("staff-mode");
+}
+
+/* ===== Hash Router（铁律 v1.4 新增 — 防 SPA 刷新跳首页）=====
+ * URL hash 格式：
+ *   #/                                  → home
+ *   #/catalog                           → catalog (无筛选)
+ *   #/catalog?cat=shopping-basket       → catalog + 预选分类
+ *   #/catalog?q=YD-S014                 → catalog + 搜索词
+ *   #/product/YD-S014                   → 产品详情
+ *   #/certs  #/partners  #/intel  #/sop → 对应子页
+ */
+function parseHash(){
+  const h = (location.hash || "").replace(/^#\/?/, "");
+  if(!h) return {page:"home"};
+  const [path, query] = h.split("?");
+  const segs = path.split("/").filter(Boolean);
+  const params = {};
+  if(query){
+    query.split("&").forEach(kv=>{
+      const [k,v] = kv.split("=");
+      if(k) params[decodeURIComponent(k)] = decodeURIComponent(v||"");
+    });
+  }
+  return {page: segs[0]||"home", arg: segs[1]||"", params};
+}
+function buildHash(page, arg, params){
+  let h = "#/" + (page==="home" ? "" : page);
+  if(arg) h += "/" + encodeURIComponent(arg);
+  if(params){
+    const qs = Object.keys(params).filter(k=>params[k]!=null && params[k]!=="")
+      .map(k=>encodeURIComponent(k)+"="+encodeURIComponent(params[k])).join("&");
+    if(qs) h += "?" + qs;
+  }
+  return h;
+}
+function setHash(page, arg, params){
+  const newHash = buildHash(page, arg, params);
+  if(location.hash !== newHash){
+    HASH_GUARD = true;       // 避免 hashchange 回调再触发 applyHashRoute
+    location.hash = newHash;
+    // 下一个 tick 解锁
+    setTimeout(()=>{ HASH_GUARD = false; }, 0);
+  }
+}
+let HASH_GUARD = false;
+function applyHashRoute(){
+  if(HASH_GUARD) return;
+  const {page, arg, params} = parseHash();
+  if(page === "product" && arg){
+    const all = (DATA && DATA.products) || [];
+    // ① 直接 id 命中（旧 URL 如 #/product/YD-C-150L 仍能用）
+    let p = all.find(x => x.id === arg);
+    // ② arg 是 variantKey（新 URL 如 #/product/YD-C[?size=150L]）
+    if(!p){
+      const sibs = all.filter(x => x.variantOf === arg);
+      if(sibs.length){
+        if(params && params.size){
+          p = sibs.find(x => x.variantSize === params.size) || null;
+        }
+        if(!p){
+          p = sibs.find(x => x.variantDefault) || sibs.sort((a,b)=>(a.variantVolume||0)-(b.variantVolume||0))[0];
+        }
+      }
+    }
+    if(p){ _routeToProduct(p, /*fromHash*/true); return; }
+    // 找不到产品 → 退到 catalog
+    _routeCatalog(params, true); return;
+  }
+  if(page === "catalog"){ _routeCatalog(params, true); return; }
+  if(["certs","partners","intel","sop"].includes(page)){ _routeSimple(page, true); return; }
+  _routeSimple("home", true);
+}
+window.addEventListener("hashchange", applyHashRoute);
+
+/* Catalog 浏览状态保留（铁律 ⑫⑬）：sessionStorage 持久化 search/filter/scrollY，30min 过期 */
+const CAT_STATE_KEY = BRAND + "_catalog_state";
+const CAT_STATE_TTL = 30 * 60 * 1000; // 30 min
+
+function saveCatalogState(){
+  if(CURRENT_PAGE !== "catalog") return;
+  const state = {
+    search: (Q("#catalogSearch")?.value) || "",
+    filter: (Q("#catalogFilter")?.value) || "",
+    scrollY: window.scrollY || 0,
+    ts: Date.now()
+  };
+  try{ sessionStorage.setItem(CAT_STATE_KEY, JSON.stringify(state)); }catch(e){}
+}
+
+function readCatalogState(){
+  try{
+    const raw = sessionStorage.getItem(CAT_STATE_KEY);
+    if(!raw) return null;
+    const s = JSON.parse(raw);
+    if(!s || (Date.now() - (s.ts||0)) > CAT_STATE_TTL){ sessionStorage.removeItem(CAT_STATE_KEY); return null; }
+    return s;
+  }catch(e){ return null; }
+}
+
+function clearCatalogState(){ try{ sessionStorage.removeItem(CAT_STATE_KEY); }catch(e){} }
+
+function restoreCatalogState(){
+  const s = readCatalogState();
+  if(!s) return false;
+  const si = Q("#catalogSearch"); if(si) si.value = s.search || "";
+  const sf = Q("#catalogFilter"); if(sf) sf.value = s.filter || "";
+  renderCatalog();
+  // 双 rAF 等布局 + 图片占位完成再 scrollTo
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    window.scrollTo({top: s.scrollY||0, behavior:"instant"});
+  }));
+  return true;
+}
+
+/* 内部实现（不写 hash），供 applyHashRoute / route 公共入口共用 */
+const HOME_ANCHOR_KEY = BRAND + "_homeReturnAnchor";
+function _routeSimple(page, fromHash, opts){
+  opts = opts || {};
+  CURRENT_PAGE = page;
+  QA(".page").forEach(p=>p.classList.remove("active"));
+  const target = Q("#page-"+page);
+  if(target) target.classList.add("active");
+  if(page==="intel") renderIntel("staff_intel","intelList");
+  if(page==="sop")   renderIntel("staff_sop","sopList");
+  if(page==="certs") renderCerts();
+  if(page==="partners") renderPartnersPage();
+  document.getElementById("mainNav").classList.remove("open");
+
+  // 首页定位：优先 opts.anchor → 再看 sessionStorage 标记（从 catalog ← 返回首页时塞的）
+  let anchor = opts.anchor;
+  if(page==="home" && !anchor){
+    try{ anchor = sessionStorage.getItem(HOME_ANCHOR_KEY) || ""; }catch(e){}
+  }
+  if(page==="home" && anchor){
+    try{ sessionStorage.removeItem(HOME_ANCHOR_KEY); }catch(e){}
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      const el = document.getElementById(anchor);
+      if(el){
+        const navH = (document.querySelector("header")?.offsetHeight) || 69;
+        const y = el.getBoundingClientRect().top + window.scrollY - navH - 8;
+        window.scrollTo({top: Math.max(0,y), behavior:"instant"});
+      } else {
+        window.scrollTo({top:0, behavior:"instant"});
+      }
+    }));
+  } else {
+    window.scrollTo({top:0, behavior:"instant"});
+  }
+  if(!fromHash) setHash(page);
+}
+
+function _routeCatalog(params, fromHash){
+  CURRENT_PAGE = "catalog";
+  QA(".page").forEach(p=>p.classList.remove("active"));
+  Q("#page-catalog").classList.add("active");
+  params = params || {};
+  // 来源识别：① fromHash + 仅 cat/q → 直接渲染 ② restoreCatalog → 还原 ③ 否则清状态
+  if(params.restoreCatalog === "1"){
+    if(!restoreCatalogState()){
+      // 没状态可恢复，按 cat/q 兜底
+      const si = Q("#catalogSearch"); if(si) si.value = params.q || "";
+      const sf = Q("#catalogFilter"); if(sf) sf.value = params.cat || "";
+      renderCatalog();
+    }
+  } else {
+    // 主动进 catalog（hash 直接命中 / 首页卡片 / 导航）→ 清状态 + 按 hash 参数渲染
+    clearCatalogState();
+    const si = Q("#catalogSearch"); if(si) si.value = params.q || "";
+    const sf = Q("#catalogFilter"); if(sf) sf.value = params.cat || "";
+    renderCatalog();
+    window.scrollTo({top:0,behavior:"instant"});
+  }
+  setupStickyObserver();
+  document.getElementById("mainNav").classList.remove("open");
+  if(!fromHash){
+    const p = {};
+    if(params.cat) p.cat = params.cat;
+    if(params.q)   p.q   = params.q;
+    if(params.restoreCatalog) p.restoreCatalog = "1";
+    setHash("catalog", "", p);
+  }
+}
+
+function _routeToProduct(product, fromHash){
+  if(!product) return;
+  // 进详情前先保存 catalog 状态（仅当当前页是 catalog；hash 直达详情时跳过）
+  if(CURRENT_PAGE === "catalog") saveCatalogState();
+  CURRENT_PRODUCT = product;
+  CURRENT_PAGE = "product";
+  QA(".page").forEach(p=>p.classList.remove("active"));
+  Q("#page-product").classList.add("active");
+  renderProductDetail();
+  window.scrollTo({top:0,behavior:"instant"});
+  document.getElementById("mainNav").classList.remove("open");
+  if(!fromHash){
+    // 变体走系列 URL：#/product/{variantKey}?size={size}
+    if(product.variantOf && product.variantSize){
+      setHash("product", product.variantOf, {size: product.variantSize});
+    } else {
+      setHash("product", product.id);
+    }
+  }
+}
+
+/* ===== 公共入口（写 hash，由 hashchange 驱动渲染） ===== */
+function route(page, opts){
+  opts = opts || {};
+  if(page === "catalog"){
+    const params = {};
+    if(opts.restoreCatalog) params.restoreCatalog = "1";
+    _routeCatalog(params, false);
+    return;
+  }
+  _routeSimple(page, false, opts);
+}
+
+function routeToProduct(id){
+  // id 可能是真实 SKU id 或 variantKey（系列卡片传入的）
+  const all = (DATA && DATA.products) || [];
+  let p = all.find(x => x.id === id);
+  if(!p){
+    // 当 variantKey 用
+    const sibs = all.filter(x => x.variantOf === id);
+    if(sibs.length){
+      p = sibs.find(x => x.variantDefault) || sibs.sort((a,b)=>(a.variantVolume||0)-(b.variantVolume||0))[0];
+    }
+  }
+  if(!p) return;
+  _routeToProduct(p, false);
+}
+
+/* 首页 6 大卡片 → 目录 + 预选分类，并记下"回首页时落到 cats 区段" */
+function routeToCatalogByCategory(catKey){
+  clearCatalogState();
+  try{ sessionStorage.setItem(HOME_ANCHOR_KEY, "catsSec"); }catch(e){}
+  _routeCatalog({cat: catKey||""}, false);
+}
+
+/* ===== Language ===== */
+// 16 种语言，按地理区域分组（首版 EN/ZH/DE/ES 是真翻译，其余 12 种为机翻）
+const LANGS = [
+  {code:"en", flag:"🇺🇸", label:"English",       group:"global"},
+  {code:"zh", flag:"🇨🇳", label:"简体中文",       group:"asia",   htmlLang:"zh-CN"},
+  {code:"de", flag:"🇩🇪", label:"Deutsch",       group:"europe"},
+  {code:"es", flag:"🇪🇸", label:"Español",       group:"europe"},
+  {code:"fr", flag:"🇫🇷", label:"Français",      group:"europe"},
+  {code:"it", flag:"🇮🇹", label:"Italiano",      group:"europe"},
+  {code:"pt", flag:"🇵🇹", label:"Português",     group:"europe"},
+  {code:"nl", flag:"🇳🇱", label:"Nederlands",    group:"europe"},
+  {code:"ru", flag:"🇷🇺", label:"Русский",       group:"europe"},
+  {code:"tr", flag:"🇹🇷", label:"Türkçe",        group:"europe"},
+  {code:"ja", flag:"🇯🇵", label:"日本語",         group:"asia"},
+  {code:"ko", flag:"🇰🇷", label:"한국어",         group:"asia"},
+  {code:"th", flag:"🇹🇭", label:"ไทย",           group:"asia"},
+  {code:"vi", flag:"🇻🇳", label:"Tiếng Việt",    group:"asia"},
+  {code:"hi", flag:"🇮🇳", label:"हिन्दी",          group:"asia"},
+  {code:"ar", flag:"🇸🇦", label:"العربية",       group:"mideast", rtl:true}
+];
+const LANG_BY_CODE = Object.fromEntries(LANGS.map(x=>[x.code,x]));
+const LANG_GROUPS = [
+  {key:"global",  title:{en:"Global",        zh:"全球",       de:"Weltweit",     es:"Global"}},
+  {key:"asia",    title:{en:"Asia Pacific",  zh:"亚太地区",    de:"Asien-Pazifik",es:"Asia Pacifico"}},
+  {key:"europe",  title:{en:"Europe",        zh:"欧洲",       de:"Europa",       es:"Europa"}},
+  {key:"mideast", title:{en:"Middle East",   zh:"中东",       de:"Naher Osten",  es:"Medio Oriente"}}
+];
+
+function setLang(l){
+  if(!LANG_BY_CODE[l]) l = "en";
+  LANG = l;
+  localStorage.setItem(BRAND+"_lang", l);
+  const meta = LANG_BY_CODE[l];
+  // Tell Chrome the page IS now in this language so it stops offering "Translate this page".
+  document.documentElement.lang = meta.htmlLang || l;
+  document.documentElement.setAttribute("translate","no");
+  document.documentElement.dir = meta.rtl ? "rtl" : "ltr";
+  Q("#langBtnLabel").textContent = meta.flag + " " + meta.label + " ▾";
+  closeLangModal();
+  renderAll();
+}
+
+function openLangModal(){
+  // 按分组渲染语言网格
+  const body = Q("#langModalBody");
+  body.innerHTML = LANG_GROUPS.map(g=>{
+    const items = LANGS.filter(x=>x.group===g.key);
+    if(!items.length) return "";
+    const title = L(g.title) || g.title.en;
+    return `
+      <div class="lang-group">
+        <div class="lang-group-title">${esc(title)}</div>
+        <div class="lang-grid">
+          ${items.map(x=>`
+            <div class="lang-row${x.code===LANG?' active':''}" onclick="setLang('${x.code}')" data-lang="${x.code}">
+              <span class="flag">${x.flag}</span>
+              <span class="label" translate="no">${esc(x.label)}</span>
+              ${x.code===LANG?'<span class="check">✓</span>':''}
+            </div>`).join("")}
+        </div>
+      </div>`;
+  }).join("");
+  Q("#langModal").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function closeLangModal(){
+  Q("#langModal").classList.remove("open");
+  document.body.style.overflow = "";
+}
+// ESC 关闭
+document.addEventListener("keydown", e=>{
+  if(e.key==="Escape") closeLangModal();
+});
+
+/* ===== Load ===== */
+async function load(){
+  applyModeClass();
+  // pick initial language
+  const url = new URLSearchParams(location.search);
+  const forced = url.get("lang");
+  const saved = localStorage.getItem(BRAND+"_lang");
+  if(forced && ["en","zh","de","es"].includes(forced)) LANG=forced;
+  else if(saved) LANG=saved;
+  else LANG="en";
+
+  // staff/admin onboarding
+  if(getMode()==="staff" && localStorage.getItem(BRAND+"_staff_ok")!=="1"){
+    const pw = prompt("Staff access password:");
+    if(pw==="jct2026"){ localStorage.setItem(BRAND+"_staff_ok","1"); applyModeClass(); }
+    else { alert("Wrong password. Redirecting to public view."); location.href = location.pathname; return; }
+  }
+  if(getMode()==="admin" && !localStorage.getItem(BRAND+"_admin_token")){
+    const tk = prompt("Admin GitHub fine-grained PAT (Contents read+write):");
+    if(tk && tk.trim()){ localStorage.setItem(BRAND+"_admin_token", tk.trim()); applyModeClass(); }
+    else { alert("No token entered. Redirecting to public view."); location.href = location.pathname; return; }
+  }
+
+  try{
+    const r = await fetch("data.json?t="+Date.now());
+    DATA = await r.json();
+  } catch(e){
+    alert("Failed to load data.json: "+e.message);
+    return;
+  }
+
+  setLang(LANG);
+  startHeroAuto();
+  // 刷新/分享链接 → 按 hash 还原页面（铁律 v1.4）
+  applyHashRoute();
+}
+
+/* ===== Render ===== */
+function renderAll(){
+  renderUiText();
+  renderHero();
+  renderStats();
+  renderWhy();
+  renderCats();
+  renderPartnersHome();
+  renderRegions();
+  renderFooter();
+  if(CURRENT_PAGE==="catalog") renderCatalog();
+  if(CURRENT_PAGE==="intel") renderIntel("staff_intel","intelList");
+  if(CURRENT_PAGE==="sop") renderIntel("staff_sop","sopList");
+  if(CURRENT_PAGE==="certs") renderCerts();
+  if(CURRENT_PAGE==="partners") renderPartnersPage();
+  if(CURRENT_PAGE==="product") renderProductDetail();
+}
+
+function renderUiText(){
+  QA("[data-uk]").forEach(el=>{
+    const k = el.dataset.uk;
+    if(DATA.ui[k]) el.textContent = L(DATA.ui[k]);
+  });
+  QA("[data-uk-placeholder]").forEach(el=>{
+    const k = el.dataset.ukPlaceholder;
+    if(DATA.ui[k]) el.placeholder = L(DATA.ui[k]);
+  });
+  // catalog filter <option>s
+  const sel = Q("#catalogFilter");
+  if(sel){
+    const cur = sel.value;
+    // 6 个 filter 来自 yuanda 真实分类
+    sel.innerHTML =
+      `<option value="">${esc(L(DATA.ui.filterAll||{}))||"All Categories"}</option>`
+    + (DATA.categories||[]).map(c=>`<option value="${esc(c.key||c.searchKey||'')}">${esc(L(c.title||{}))}</option>`).join("");
+    sel.value = cur;
+  }
+  // brand-level
+  Q("#brand-name").textContent = DATA.brand.name;
+}
+
+function renderHero(){
+  const slides = Q("#heroSlides");
+  const dots = Q("#heroDots");
+  slides.innerHTML = "";
+  dots.innerHTML = "";
+  DATA.hero.forEach((h,i)=>{
+    const slide = document.createElement("div");
+    slide.className = "hero-slide" + (i===0?" active":"");
+    slide.innerHTML = `
+      <img src="${esc(h.img)}" alt="">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="kicker">${esc(L(h.kicker))}</div>
+          <h1>${esc(L(h.title))}</h1>
+          <p>${esc(L(h.sub))}</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="route('catalog')">${esc(L(h.ctaPrimary))}</button>
+            <button class="btn btn-ghost" onclick="route('certs')">${esc(L(h.ctaGhost))}</button>
+          </div>
+        </div>
+      </div>`;
+    slides.appendChild(slide);
+    const d = document.createElement("button");
+    d.className = (i===0?"active":"");
+    d.onclick = ()=> showHero(i);
+    dots.appendChild(d);
+  });
+}
+let heroIdx=0,heroTimer=null;
+function showHero(i){
+  heroIdx = i;
+  QA("#heroSlides .hero-slide").forEach((s,k)=>s.classList.toggle("active", k===i));
+  QA("#heroDots button").forEach((b,k)=>b.classList.toggle("active", k===i));
+}
+let _stickyObserver = null;
+function setupStickyObserver(){
+  const el = Q("#catalogSticky");
+  if(!el) return;
+  if(_stickyObserver) _stickyObserver.disconnect();
+  // 用一个不可见 sentinel 放在 sticky 之前，sentinel 离开视口 = sticky 吸顶了
+  let sentinel = Q("#catalogStickySentinel");
+  if(!sentinel){
+    sentinel = document.createElement("div");
+    sentinel.id = "catalogStickySentinel";
+    sentinel.style.cssText = "position:absolute;top:-1px;height:1px;width:1px;pointer-events:none";
+    el.parentElement.style.position = "relative";
+    el.parentElement.insertBefore(sentinel, el);
+  }
+  _stickyObserver = new IntersectionObserver(([entry])=>{
+    el.classList.toggle("is-stuck", !entry.isIntersecting);
+  }, {rootMargin:"-70px 0px 0px 0px"});
+  _stickyObserver.observe(sentinel);
+}
+
+function startHeroAuto(){
+  if(heroTimer) clearInterval(heroTimer);
+  heroTimer = setInterval(()=>{
+    if(!DATA) return;
+    showHero((heroIdx+1) % DATA.hero.length);
+  }, 6500);
+}
+
+function renderStats(){
+  const grid = Q("#statsGrid");
+  const yr = new Date().getFullYear() - (DATA.brand.foundedYear||2014);
+  grid.innerHTML = DATA.stats.map(s=>{
+    const v = s._auto==="years" ? yr : s.value;
+    return `<div class="stat-item"><div class="stat-value">${esc(v)}</div><div class="stat-label">${esc(L(s.label))}</div></div>`;
+  }).join("");
+}
+
+function renderWhy(){
+  Q("#whyTitle").textContent = L(DATA.whyTitle);
+  Q("#whySub").textContent = L(DATA.whySub);
+  Q("#whyGrid").innerHTML = DATA.why.map(w=>`
+    <a class="why-card" href="${esc(w.link||"#")}" onclick="if(this.getAttribute('href').startsWith('#')){const t=this.getAttribute('href').slice(1);if(t==='catalog'){route('catalog');return false;}if(t==='certs'){route('certs');return false;}if(t==='partners'){route('partners');return false;}if(t==='contact'){location.href='mailto:'+(DATA.brand.email||'');return false;}}">
+      <div class="icon">${esc(w.icon||"⚡")}</div>
+      <h3>${esc(L(w.title))}</h3>
+      <p>${esc(L(w.desc))}</p>
+      <span class="why-cta">${esc(L(w.cta))} →</span>
+    </a>`).join("");
+}
+
+function renderCats(){
+  Q("#catsTitle").textContent = L(DATA.catsTitle);
+  Q("#catsSub").textContent = L(DATA.catsSub);
+  Q("#catsGrid").innerHTML = DATA.cats.map(c=>`
+    <div class="cat-card" onclick="routeToCatalogByCategory('${esc(c.searchKey||'')}')">
+      <img src="${esc(c.img)}" alt="">
+      <div class="cat-card-info">
+        <h3>${esc(L(c.title))}</h3>
+        <p>${esc(L(c.sub))}</p>
+      </div>
+    </div>`).join("");
+}
+
+function renderPartnersHome(){
+  Q("#partnersTitle").textContent = L(DATA.partnersTitle);
+  Q("#partnersSub").textContent = L(DATA.partnersSub);
+  Q("#partnersGrid").innerHTML = DATA.partners.map(p=>`
+    <div class="partner-card">
+      <div class="partner-icon" style="color:${esc(p.color||'#0A4A8C')}">${esc(p.icon||'')}</div>
+      <div class="partner-name">${esc(L(p.name))}</div>
+    </div>`).join("");
+}
+
+function renderRegions(){
+  Q("#regionsTitle").textContent = L(DATA.regionsTitle);
+  Q("#regionsSub").textContent = L(DATA.regionsSub);
+  Q("#regionsGrid").innerHTML = DATA.regions.map(r=>`
+    <div class="region-card">
+      <span class="region-flag">${esc(r.flag||'🌐')}</span>
+      <div class="region-name">${esc(L(r.name))}</div>
+      <div class="region-sub">${esc(L(r.sub))}</div>
+    </div>`).join("");
+}
+
+function renderPartnersPage(){
+  Q("#partnersPageTitle").textContent = L(DATA.partnersTitle);
+  Q("#partnersPageSub").textContent = L(DATA.partnersSub);
+  Q("#partnersPageGrid").innerHTML = DATA.partners.map(p=>`
+    <div class="partner-card">
+      <div class="partner-icon" style="color:${esc(p.color||'#0A4A8C')}">${esc(p.icon||'')}</div>
+      <div class="partner-name">${esc(L(p.name))}</div>
+    </div>`).join("");
+}
+
+/* ===== Product schema adapter (兼容 v1.2 schema + yuanda schema) =====
+ * v1.2 标准 schema: {id, sku, name:{en,zh,...}, price, moq, category, images:[], specs:[{k:{...},v:...}]}
+ * yuanda schema:   {id, category, basic:{nameEn,nameZh,model,shortName,...}, parameters:{...11 keys}, commerce:{price,moq,sample,leadTime}, media:{mainImage,sourcePageImage}}
+ * 通过 pAdapt() 把任意 schema 转成统一接口供 render 用。
+ */
+const YUANDA_PARAM_LABELS = {
+  specification:    {en:"Specification",            zh:"规格", de:"Spezifikation",  es:"Especificación", fr:"Spécification", it:"Specifica",   ru:"Спецификация",   pt:"Especificação", ja:"仕様",     ko:"사양",      ar:"المواصفات", nl:"Specificatie", tr:"Spesifikasyon", th:"ข้อมูลจำเพาะ", vi:"Thông số", hi:"विनिर्देश"},
+  material:         {en:"Material",                 zh:"材质", de:"Material",       es:"Material",       fr:"Matériau",      it:"Materiale",   ru:"Материал",       pt:"Material",      ja:"材質",     ko:"재질",      ar:"المادة",     nl:"Materiaal",    tr:"Malzeme",       th:"วัสดุ",        vi:"Vật liệu", hi:"सामग्री"},
+  layers:           {en:"Layers",                   zh:"层数", de:"Ebenen",         es:"Estantes",       fr:"Niveaux",       it:"Ripiani",     ru:"Уровни",         pt:"Camadas",       ja:"段数",     ko:"단수",      ar:"الطبقات",   nl:"Lagen",        tr:"Katmanlar",     th:"จำนวนชั้น",   vi:"Số tầng",  hi:"परतें"},
+  mainMaterialThickness: {en:"Main Material Thickness", zh:"主材厚度", de:"Materialstärke", es:"Espesor",      fr:"Épaisseur",     it:"Spessore",    ru:"Толщина материала", pt:"Espessura", ja:"主材厚さ", ko:"두께",      ar:"السماكة",   nl:"Dikte",        tr:"Kalınlık",      th:"ความหนา",      vi:"Độ dày",   hi:"मोटाई"},
+  surfaceTreatment: {en:"Surface Treatment",        zh:"表面处理", de:"Oberflächenbehandlung", es:"Acabado", fr:"Traitement de surface", it:"Trattamento superficiale", ru:"Обработка поверхности", pt:"Tratamento", ja:"表面処理", ko:"표면 처리", ar:"معالجة السطح", nl:"Oppervlaktebehandeling", tr:"Yüzey İşleme", th:"การเคลือบผิว", vi:"Xử lý bề mặt", hi:"सतह उपचार"},
+  capacityPerLayer: {en:"Capacity per Layer",       zh:"每层承重", de:"Tragkraft/Ebene", es:"Carga/estante", fr:"Charge/niveau", it:"Carico/ripiano", ru:"Грузоп./уровень", pt:"Carga/camada", ja:"段あたり耐荷重", ko:"단당 하중", ar:"السعة لكل طبقة", nl:"Capaciteit/laag", tr:"Katman Kapasitesi", th:"น้ำหนักต่อชั้น", vi:"Tải mỗi tầng", hi:"प्रति परत क्षमता"},
+  volume:           {en:"Volume",                   zh:"容积", de:"Volumen",        es:"Volumen",        fr:"Volume",        it:"Volume",      ru:"Объём",          pt:"Volume",        ja:"容積",     ko:"용량",      ar:"الحجم",      nl:"Volume",       tr:"Hacim",         th:"ปริมาตร",    vi:"Dung tích",hi:"क्षमता"},
+  capacity:         {en:"Capacity",                 zh:"载重",  de:"Kapazität",      es:"Capacidad",      fr:"Capacité",      it:"Capacità",    ru:"Грузопод.",      pt:"Capacidade",    ja:"耐荷重",   ko:"용량",      ar:"السعة",      nl:"Capaciteit",   tr:"Kapasite",      th:"ความจุ",      vi:"Sức chứa",hi:"क्षमता"},
+  castors:          {en:"Castors",                  zh:"脚轮",  de:"Rollen",         es:"Ruedas",         fr:"Roulettes",     it:"Ruote",       ru:"Колёса",         pt:"Rodízios",      ja:"キャスター", ko:"캐스터",   ar:"العجلات",    nl:"Wieltjes",     tr:"Tekerlek",      th:"ล้อ",          vi:"Bánh xe", hi:"पहिये"},
+  bearing:          {en:"Bearing",                  zh:"轴承",  de:"Lager",          es:"Rodamiento",     fr:"Roulement",     it:"Cuscinetto",  ru:"Подшипник",      pt:"Rolamento",     ja:"ベアリング", ko:"베어링",   ar:"المحمل",     nl:"Lager",        tr:"Yatak",         th:"แบริ่ง",      vi:"Vòng bi", hi:"बेयरिंग"},
+  diameter:         {en:"Diameter",                 zh:"直径",  de:"Durchmesser",    es:"Diámetro",       fr:"Diamètre",      it:"Diametro",    ru:"Диаметр",        pt:"Diâmetro",      ja:"直径",     ko:"직경",      ar:"القطر",      nl:"Diameter",     tr:"Çap",           th:"เส้นผ่านศูนย์กลาง", vi:"Đường kính", hi:"व्यास"},
+};
+const YUANDA_PARAM_KEYS = Object.keys(YUANDA_PARAM_LABELS);
+
+function isYuandaProduct(p){
+  return !!(p && (p.basic || p.parameters || p.commerce || p.media));
+}
+
+/* ===== Variant utilities — 同款多尺寸合并显示 ===== */
+function getVariantSiblings(variantKey){
+  // 返回所有 variantOf===variantKey 的兄弟产品，按 variantVolume 升序
+  return (DATA.products||[])
+    .filter(x => x.variantOf === variantKey)
+    .sort((a,b) => (a.variantVolume||0) - (b.variantVolume||0));
+}
+function getVariantDefault(variantKey){
+  // 找出该系列的默认 SKU（带 variantDefault:true 的那个），找不到则返回第一个
+  const sibs = getVariantSiblings(variantKey);
+  return sibs.find(x => x.variantDefault) || sibs[0] || null;
+}
+function findProductBySkuOrVariant(arg){
+  // 路由查询：先精确匹配 id，再当作 variantKey 查 default
+  const all = DATA.products || [];
+  const direct = all.find(x => x.id === arg);
+  if(direct) return direct;
+  // arg 可能是 variantKey（YD-C / ZC-M 等）
+  const def = getVariantDefault(arg);
+  return def;
+}
+
+function pAdapt(p){
+  if(!p) return p;
+  if(!isYuandaProduct(p)) return p;  // already v1.2
+  const b = p.basic || {};
+  const m = p.media || {};
+  const c = p.commerce || {};
+  const par = p.parameters || {};
+  // 收集图片：mainImage 优先；如果文件名带"未在PDF"等异常也保留以便后台替换
+  const images = [];
+  if(m.mainImage) images.push(m.mainImage);
+  if(Array.isArray(p.images)) p.images.forEach(x=>{if(x && !images.includes(x)) images.push(x);});
+  // 不再把 sourcePageImage(整页 PDF 截图)塞进缩略图廊 — 已被弃用
+  // 取一个 yuanda 字段的可读值（过滤"未在PDF中明确"等占位）
+  // 支持 i18n 字典：先 L() 取当前语言字符串再判断
+  const placeholder = /未在|to be confirmed|n\/a|tbd|未明确/i;
+  const readVal = v => {
+    if(v == null) return "";
+    if(typeof v === "object") return L(v) || v.en || "";
+    return String(v);
+  };
+  const isPlaceholder = v => {
+    const s = readVal(v);
+    return !s || placeholder.test(s);
+  };
+  // 构造 specs[]
+  const specs = [];
+  YUANDA_PARAM_KEYS.forEach(k=>{
+    const v = par[k];
+    if(v && !isPlaceholder(v)){
+      specs.push({k: YUANDA_PARAM_LABELS[k], v: readVal(v).replace(/\s+/g," ").trim()});
+    }
+  });
+  // 兜底：如果还有其它未识别的 parameters key 也加进去
+  Object.keys(par).forEach(k=>{
+    if(!YUANDA_PARAM_KEYS.includes(k)){
+      const v = par[k];
+      if(v && !isPlaceholder(v)){
+        const label = k.replace(/([A-Z])/g," $1").replace(/^./,c=>c.toUpperCase());
+        specs.push({k:{en:label,zh:label,de:label,es:label}, v: readVal(v)});
+      }
+    }
+  });
+  // 处理产品名：basic.nameEn 通常带中文+英文，splitName
+  const rawName = b.nameEn || b.nameZh || b.shortName || p.name || "";
+  return {
+    _yuanda: true,           // marker
+    _raw: p,                 // 保留原 ref
+    id: p.id,
+    sku: b.model || p.sku || "",
+    name: {
+      en: b.nameEn || rawName,
+      zh: b.nameZh || rawName,
+      de: rawName, es: rawName, fr: rawName, it: rawName,
+      ru: rawName, pt: rawName, ja: rawName, ko: rawName,
+      ar: rawName, nl: rawName, tr: rawName, th: rawName,
+      vi: rawName, hi: rawName
+    },
+    price: readVal(c.price)    || readVal(p.price)    || "Project quotation",
+    moq:   readVal(c.moq)      || readVal(p.moq)      || "Project-based",
+    leadTime: readVal(c.leadTime) || "",
+    sample:   readVal(c.sample)   || "",
+    category: p.category || p.categoryKey || "",
+    categoryLabel: p.categoryLabel || "",
+    images: images.length ? images : (Array.isArray(p.images)?p.images:[]),
+    specs: specs,
+    detailImgs: p.detailImgs || []
+  };
+}
+
+function renderCatalog(){
+  const q = (Q("#catalogSearch")?.value || "").toLowerCase().trim();
+  const f = Q("#catalogFilter")?.value || "";
+  const grid = Q("#productsGrid");
+  if(!grid) return;
+
+  // 变体去重：同 variantOf 的 SKU 只取 default（或第一个）展示在目录页
+  // 但搜索仍然按所有 SKU 文本匹配 —— 用户搜 "YD-C-150L" 也能命中系列卡片
+  const allRaw = DATA.products || [];
+  const cardSeed = []; // 用来渲染目录卡的"代表产品"
+  const seenVariants = new Set();
+
+  for(const p of allRaw){
+    if(p.variantOf){
+      if(seenVariants.has(p.variantOf)) continue;
+      seenVariants.add(p.variantOf);
+      cardSeed.push(getVariantDefault(p.variantOf) || p);
+    } else {
+      cardSeed.push(p);
+    }
+  }
+
+  // 适配 + 过滤
+  const list = cardSeed.map(pAdapt).filter(p=>{
+    if(f && p.category!==f) return false;
+    if(q){
+      // 系列卡片的搜索需要覆盖所有兄弟 SKU 的文本
+      let searchableText = (L(p.name)+" "+p.sku+" "+(p.category||"")).toLowerCase();
+      const raw = p._raw;
+      if(raw && raw.variantOf){
+        // 拼接所有兄弟 SKU id 进搜索文本
+        const sibs = getVariantSiblings(raw.variantOf);
+        searchableText += " " + sibs.map(s=>s.id).join(" ").toLowerCase();
+        searchableText += " " + raw.variantOf.toLowerCase();
+      }
+      if(!searchableText.includes(q)) return false;
+    }
+    return true;
+  });
+
+  const html = list.map(p=>{
+    const raw = p._raw;
+    const isVariant = !!(raw && raw.variantOf);
+    let badgeHtml = "";
+    let displaySku = p.sku;
+    if(isVariant){
+      const sibs = getVariantSiblings(raw.variantOf);
+      if(sibs.length > 1){
+        // 判断是"同款不同容量"（如 YD-C-60L/80L）还是"同类不同款式"（如 YD-L A/B/C/D 型号）
+        // 规则：所有 variantSize 都是 "数字+L" 格式 → 容量变体；否则 → 款式变体
+        const allLikeVolume = sibs.every(s => /^\d+L$/.test(String(s.variantSize||"")));
+        let sizeLabel;
+        if(allLikeVolume){
+          const minV = sibs[0].variantVolume;
+          const maxV = sibs[sibs.length-1].variantVolume;
+          sizeLabel = (LANG==="zh") ? `${sibs.length} 种容量 ${minV}L–${maxV}L` : `${sibs.length} sizes · ${minV}L–${maxV}L`;
+        } else {
+          sizeLabel = (LANG==="zh") ? `${sibs.length} 款式可选` : `${sibs.length} models available`;
+        }
+        badgeHtml = `<div class="product-card-variant-badge">${esc(sizeLabel)}</div>`;
+      }
+      // 目录卡 sku 显示系列代号（如 "YD-C"）更清爽
+      displaySku = raw.variantOf;
+    }
+    // 路由：变体系列卡 → #/product/{variantKey} ; 普通卡 → #/product/{id}
+    const routeArg = isVariant ? raw.variantOf : p.id;
+    return `
+    <div class="product-card" onclick="routeToProduct('${esc(routeArg)}')">
+      <div class="product-card-img"><img src="${esc((p.images||[])[0]||'')}" alt="" onerror="this.style.opacity=.3"></div>
+      <div class="product-card-body">
+        <div class="product-card-sku">${esc(displaySku)}</div>
+        <div class="product-card-name">${esc(L(p.name))}</div>
+        ${badgeHtml}
+        <div class="product-card-meta">
+          <span class="product-card-price">${esc(p.price)}</span>
+          <span>MOQ ${esc(p.moq)}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join("") || `<p style="grid-column:1/-1;text-align:center;color:#64748B;padding:40px">No products match.</p>`;
+  // Keep the edit-affordance span
+  grid.innerHTML = `<span class="edit-affordance">✎ Edit Products</span>` + html;
+}
+
+/* ===== 渲染右侧 info 区（增量更新友好，不动左侧 gallery） ===== */
+function buildProductInfoHtml(p, raw){
+  const hasSpecs = p.specs && p.specs.length > 0;
+  let variantSelectorHtml = "";
+  if(raw && raw.variantOf){
+    const sibs = getVariantSiblings(raw.variantOf);
+    if(sibs.length > 1){
+      // 同款多容量 vs 同类多款式
+      const allLikeVolume = sibs.every(s => /^\d+L$/.test(String(s.variantSize||"")));
+      const currentSize = raw.variantSize || `${raw.variantVolume||""}L`;
+      const labelText = allLikeVolume
+        ? ((LANG==="zh") ? "选择容量" : "Select Size")
+        : ((LANG==="zh") ? "选择款式" : "Select Model");
+      const currentText = (LANG==="zh") ? `当前：${currentSize}` : `Currently: ${currentSize}`;
+      const hintText = allLikeVolume
+        ? ((LANG==="zh")
+            ? `该型号共 ${sibs.length} 种容量可选，规格、承重、价格随容量变化`
+            : `${sibs.length} sizes available · specs, capacity & pricing vary by size`)
+        : ((LANG==="zh")
+            ? `该系列共 ${sibs.length} 个款式可选，结构、安全等级、使用场景不同，点击切换查看`
+            : `${sibs.length} models in this series · structure, security level & use case vary, click to compare`);
+      variantSelectorHtml = `
+        <div class="pd-variant-wrap">
+          <div class="pd-variant-label">
+            <span>${esc(labelText)}</span>
+            <span class="pd-variant-current">${esc(currentText)}</span>
+          </div>
+          <div class="pd-variant-grid">
+            ${sibs.map(s=>`<button type="button" class="pd-variant-btn${s.id===raw.id?' active':''}" onclick="pdSwitchVariant('${esc(s.id)}')">${esc(s.variantSize||(s.variantVolume+"L"))}</button>`).join("")}
+          </div>
+          <div class="pd-variant-hint">${esc(hintText)}</div>
+        </div>`;
+    }
+  }
+  return `
+    ${p.sku ? `<div class="pd-sku">${esc(p.sku)}</div>` : ''}
+    <h1>${esc(L(p.name))}</h1>
+    ${p.categoryLabel ? `<div style="font-size:13px;color:var(--c-ink-soft);margin-bottom:14px">${esc(typeof p.categoryLabel === 'object' ? L(p.categoryLabel) : p.categoryLabel)}</div>` : ''}
+    ${variantSelectorHtml}
+    <div class="pd-price-row">
+      <div><div class="label">PRICE</div><div class="val">${esc(p.price)}</div></div>
+      <div><div class="label">MOQ</div><div class="val">${esc(p.moq)}</div></div>
+    </div>
+    <div class="pd-quote-btn">
+      <a class="btn btn-primary" href="mailto:${esc(DATA.brand.email||'')}?subject=Quote%20Request%20-%20${encodeURIComponent(p.sku||p.id)}">${esc(L(DATA.ui.ctaInquire))}</a>
+      <a class="btn btn-ghost" style="color:var(--c-primary);border-color:var(--c-line);background:#fff" href="mailto:${esc(DATA.brand.email||'')}">${esc(L(DATA.ui.ctaContact))}</a>
+    </div>
+    ${hasSpecs ? `
+    <table class="pd-specs-table">
+      <tbody>
+        ${p.specs.map(s=>`<tr><td>${esc(L(s.k))}</td><td>${esc(s.v)}</td></tr>`).join('')}
+        ${p.leadTime ? `<tr><td>Lead Time</td><td>${esc(p.leadTime)}</td></tr>`:''}
+        ${p.sample   ? `<tr><td>Sample</td><td>${esc(p.sample)}</td></tr>`:''}
+      </tbody>
+    </table>` : `
+    <div style="padding:20px;background:#FAFBFC;border:1px dashed var(--c-line);border-radius:8px;color:var(--c-ink-soft);font-size:14px;line-height:1.6">
+      <strong style="color:var(--c-ink);display:block;margin-bottom:6px">Detailed specifications available on request.</strong>
+      Contact our sales team with your project requirements (dimensions, capacity, customization) — full technical specifications, drawings and samples will be confirmed by our engineering team.
+    </div>`}
+  `;
+}
+
+function renderProductDetail(){
+  if(!CURRENT_PRODUCT){ Q("#pdContainer").innerHTML = ""; return; }
+  const p = pAdapt(CURRENT_PRODUCT);
+  const raw = CURRENT_PRODUCT;
+  const hasMultiImg = (p.images||[]).length > 1;
+
+  Q("#pdContainer").innerHTML = `
+    <div class="pd-back-wrap">
+      <a class="pd-back" href="#" onclick="route('catalog',{restoreCatalog:true});return false">← ${esc(L(DATA.ui.navCatalog))}</a>
+    </div>
+    <div class="pd-grid">
+      <div class="pd-gallery">
+        <div class="pd-main-img" id="pdMainImgWrap">
+          <img id="pdMainImg" src="${esc((p.images||[])[0]||'')}" alt="${esc(L(p.name))}" onerror="this.style.opacity=.3;this.alt='Image unavailable'">
+          <div class="pd-zoom-hint">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8 11h6M11 8v6"/></svg>
+            <span>${LANG==='zh'?'悬停放大':'Hover to zoom'}</span>
+          </div>
+        </div>
+        ${hasMultiImg ? `<div class="pd-thumbs">
+          ${p.images.map((im,i)=>`<div class="pd-thumb${i===0?' active':''}" onclick="pdSwitchImg(${i})"><img src="${esc(im)}" onerror="this.style.opacity=.3"></div>`).join('')}
+        </div>` : ''}
+      </div>
+      <div class="pd-info" id="pdInfo">${buildProductInfoHtml(p, raw)}</div>
+    </div>
+    ${(p.detailImgs && p.detailImgs.length)?`
+    <div class="pd-detail-wrap">
+      <h3>${esc(L(DATA.ui.detailsTitle||{}))||'Details 细节图'}</h3>
+      <div class="pd-detail-imgs">
+        ${p.detailImgs.map(im=>{
+          // 从文件名提取标签：detail-post.png → Post / 立柱 等
+          const fn = String(im).split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i,'').replace(/^detail-/,'');
+          const label = fn.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+          return `<div class="pd-detail-item" onclick="pdOpenLightbox('${esc(im)}')">
+            <img src="${esc(im)}" onerror="this.parentElement.style.display='none'">
+            <div class="pd-detail-label">${esc(label)}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`:''}
+  `;
+  // 绑定鼠标悬停放大镜（hover-zoom）效果
+  pdBindZoom();
+}
+
+/* ===== Magnifier / inline-zoom on main image =====
+ * 鼠标进入主图 → 图片放大 2.5x，transform-origin 跟随鼠标位置 → 类似京东详情页效果
+ * 鼠标离开 → 复位
+ * 触屏设备自动禁用（CSS @media hover:none）*/
+function pdBindZoom(){
+  const wrap = document.getElementById("pdMainImgWrap");
+  const img = document.getElementById("pdMainImg");
+  if(!wrap || !img) return;
+  // 触屏设备不绑定（依赖 CSS 已隐藏 hint + 禁用 transition）
+  if(window.matchMedia && window.matchMedia("(hover:none)").matches) return;
+
+  const ZOOM_SCALE = 2.5;
+  let active = false;
+
+  const onMove = (e)=>{
+    const rect = wrap.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    img.style.transformOrigin = `${Math.max(0,Math.min(100,x))}% ${Math.max(0,Math.min(100,y))}%`;
+    img.style.transform = `scale(${ZOOM_SCALE})`;
+  };
+  const onEnter = ()=>{
+    active = true;
+    wrap.classList.add("zoom-active");
+  };
+  const onLeave = ()=>{
+    active = false;
+    wrap.classList.remove("zoom-active");
+    img.style.transform = "";
+    img.style.transformOrigin = "";
+  };
+
+  wrap.addEventListener("mouseenter", onEnter);
+  wrap.addEventListener("mousemove", onMove);
+  wrap.addEventListener("mouseleave", onLeave);
+}
+
+function pdSwitchImg(i){
+  const p = pAdapt(CURRENT_PRODUCT);
+  Q("#pdMainImg").src = (p.images||[])[i];
+  QA(".pd-thumb").forEach((t,k)=>t.classList.toggle("active", k===i));
+}
+function pdOpenLightbox(src){
+  let lb = Q("#pdLightbox");
+  if(!lb){
+    lb = document.createElement("div");
+    lb.id = "pdLightbox";
+    lb.className = "pd-lightbox";
+    lb.innerHTML = `<button class="pd-lightbox-close">×</button><img id="pdLightboxImg" src="" alt="">`;
+    document.body.appendChild(lb);
+    lb.addEventListener("click", e=>{ if(e.target===lb || e.target.classList.contains("pd-lightbox-close")) lb.classList.remove("open"); });
+    document.addEventListener("keydown", e=>{ if(e.key==="Escape") lb.classList.remove("open"); });
+  }
+  Q("#pdLightboxImg").src = src;
+  lb.classList.add("open");
+}
+function pdSwitchImg(i){
+  const p = pAdapt(CURRENT_PRODUCT);
+  Q("#pdMainImg").src = (p.images||[])[i];
+  QA(".pd-thumb").forEach((t,k)=>t.classList.toggle("active", k===i));
+}
+
+/* === Variant switching — 点击 size 按钮切换 SKU ===
+ * 增量更新策略：只重渲染右侧 #pdInfo 区块，左侧 sticky gallery 与外壳完全不动
+ * → 不触发整页 reflow → sticky 不会重新计算 → 滚动条 0 抖动
+ * URL 用 history.replaceState 静默替换，不触发浏览器 hash-jump */
+function pdSwitchVariant(skuId){
+  const next = (DATA.products||[]).find(x => x.id === skuId);
+  if(!next) return;
+  CURRENT_PRODUCT = next;
+
+  // 1) 静默替换 URL（不会触发 hashchange / 不会触发浏览器原生滚动）
+  let newHash;
+  if(next.variantOf && next.variantSize){
+    newHash = buildHash("product", next.variantOf, {size: next.variantSize});
+  } else {
+    newHash = buildHash("product", next.id);
+  }
+  if(location.hash !== newHash){
+    HASH_GUARD = true;
+    try { history.replaceState(null, "", newHash); } catch(e){}
+    setTimeout(()=>{ HASH_GUARD = false; }, 0);
+  }
+
+  // 2) 只更新右侧 info 区块的 innerHTML，左侧 sticky gallery 不动
+  const infoEl = document.getElementById("pdInfo");
+  if(infoEl){
+    const p = pAdapt(next);
+    infoEl.innerHTML = buildProductInfoHtml(p, next);
+    // 主图也同步切换（如果新 SKU 有自己的图），并重置 zoom 状态
+    const mainImg = document.getElementById("pdMainImg");
+    const mainWrap = document.getElementById("pdMainImgWrap");
+    const newImg = (p.images||[])[0];
+    if(mainImg && newImg && mainImg.getAttribute("src") !== newImg){
+      mainImg.setAttribute("src", newImg);
+      // 重置 zoom 状态（防止切换后焦点错位）
+      if(mainWrap) mainWrap.classList.remove("zoom-active");
+      mainImg.style.transform = "";
+      mainImg.style.transformOrigin = "";
+    }
+  } else {
+    // 兜底：找不到 #pdInfo 容器（理论上不会发生）→ 完整渲染
+    renderProductDetail();
+  }
+}
+
+function renderCerts(){
+  Q("#certsTitle").textContent = L(DATA.certsTitle);
+  Q("#certsGrid").innerHTML = `<span class="edit-affordance">✎ Edit Credentials</span>` + DATA.certs.map((c,i)=>`
+    <div class="cert-card">
+      <div class="cert-img">${["🏅","✓","🛡","⭐","🔖"][i%5]}</div>
+      <h3>${esc(L(c.title))}</h3>
+      <p>${esc(L(c.desc))}</p>
+      ${c.verifyUrl?`<a class="cert-verify-btn" href="${esc(c.verifyUrl)}" target="_blank">${esc(L(c.verifyLabel))}</a>`:`<span class="cert-verify-btn" style="background:#F8FAFC;color:#94A3B8">${esc(L(c.verifyLabel))}</span>`}
+    </div>`).join("");
+}
+
+function renderIntel(key, gridId){
+  const list = DATA[key] || [];
+  Q("#"+gridId).innerHTML = `<span class="edit-affordance">✎ Edit</span>` + list.map(x=>`
+    <div class="intel-item">
+      <span class="intel-cat">${esc(x.cat)}</span>
+      <div class="intel-t">${esc(x.t)}</div>
+      <div class="intel-c">${esc(x.c)}</div>
+    </div>`).join("");
+}
+
+function renderFooter(){
+  Q("#ft-fullName").textContent = L(DATA.brand.nameFull);
+  Q("#ft-tagline").textContent = L(DATA.brand.tagline);
+  Q("#ft-email").textContent = DATA.brand.email || "";
+  Q("#ft-email").href = "mailto:" + (DATA.brand.email || "");
+  Q("#ft-phone").textContent = DATA.brand.phone || "";
+  Q("#ft-address").textContent = L(DATA.brand.address);
+  Q("#ft-year").textContent = new Date().getFullYear();
+  Q("#ft-rights").textContent = L(DATA.footer.rights);
+  // Bottom strip: 永远用 brand.name + brand.tagline（已 i18n）
+  const fb = Q("#ft-brand-name"); if(fb) fb.textContent = DATA.brand.name || "";
+  const fbt = Q("#ft-bottom-tagline"); if(fbt) fbt.textContent = L(DATA.brand.tagline);
+  Q("[data-uk='ftContact']").textContent = L(DATA.footer.contact);
+  Q("[data-uk='ftAddress']").textContent = L(DATA.footer.address);
+  Q("[data-uk='ftCapabilities']").textContent = L(DATA.footer.capabilities);
+}
+
+/* ===== Admin clicking ===== */
+document.addEventListener("click", e=>{
+  if(!isAdmin()) return;
+  const editable = e.target.closest(".editable");
+  if(editable && (e.target.closest(".edit-affordance") || (e.target.tagName==="SECTION" || e.target===editable))){
+    const key = editable.dataset.edit;
+    if(key) { e.preventDefault(); openEditor(key); }
+  }
+});
+
+/* ===== Editor ===== */
+function openEditor(key){
+  CURRENT_EDIT = key;
+  Q("#modalTitle").textContent = "Edit: " + key;
+  Q("#modalBody").innerHTML = buildEditor(key);
+  Q("#modal").classList.add("open");
+}
+function closeModal(){
+  Q("#modal").classList.remove("open");
+  CURRENT_EDIT = null;
+}
+
+function buildEditor(key){
+  const list = ["hero","stats","why","cats","partners","regions","products","certs","staff_intel","staff_sop"];
+  if(list.includes(key)) return buildListEditor(key);
+  return `<p>Editor for "${esc(key)}" not implemented yet.</p>`;
+}
+
+const FIELD_SCHEMAS = {
+  hero: [
+    {k:"img", type:"image", label:"Image (21:9)"},
+    {k:"kicker", type:"i18n", label:"Kicker (small label)"},
+    {k:"title", type:"i18n", label:"Headline"},
+    {k:"sub", type:"i18n", label:"Subtitle"},
+    {k:"ctaPrimary", type:"i18n", label:"Primary CTA"},
+    {k:"ctaGhost", type:"i18n", label:"Secondary CTA"}
+  ],
+  stats: [
+    {k:"value", type:"text", label:"Value (e.g., '30+' or leave blank if _auto)"},
+    {k:"_auto", type:"text", label:"Auto mode (leave blank or 'years')"},
+    {k:"label", type:"i18n", label:"Label"}
+  ],
+  why: [
+    {k:"icon", type:"text", label:"Icon (emoji)"},
+    {k:"title", type:"i18n", label:"Title"},
+    {k:"desc", type:"i18n", label:"Description"},
+    {k:"cta", type:"i18n", label:"CTA text"},
+    {k:"link", type:"text", label:"Link (e.g., #catalog, #certs, #contact)"}
+  ],
+  cats: [
+    {k:"img", type:"image", label:"Image"},
+    {k:"title", type:"i18n", label:"Title"},
+    {k:"sub", type:"i18n", label:"Subtitle"},
+    {k:"searchKey", type:"text", label:"Filter Key (granulator/shredder/stripper)"}
+  ],
+  partners: [
+    {k:"name", type:"i18n", label:"Industry name"},
+    {k:"icon", type:"text", label:"Icon (emoji)"},
+    {k:"color", type:"text", label:"Color (hex)"}
+  ],
+  regions: [
+    {k:"flag", type:"text", label:"Flag emoji"},
+    {k:"name", type:"i18n", label:"Region name"},
+    {k:"sub", type:"i18n", label:"Sub (countries)"}
+  ],
+  products: [
+    {k:"id", type:"text", label:"ID (URL-safe, unique)"},
+    {k:"sku", type:"text", label:"SKU"},
+    {k:"name", type:"i18n", label:"Product Name"},
+    {k:"price", type:"text", label:"Price"},
+    {k:"moq", type:"text", label:"MOQ"},
+    {k:"category", type:"text", label:"Category"},
+    {k:"images", type:"imagelist", label:"Images"},
+    {k:"specs", type:"speclist", label:"Specs (key/value)"}
+  ],
+  // Yuanda 专属 schema - 字段路径用点号嵌套(支持 basic.nameEn / parameters.specification 等)
+  products_yuanda: [
+    {k:"id", type:"text", label:"ID (must stay unique)"},
+    {k:"basic.model", type:"text", label:"Model No (SKU)"},
+    {k:"basic.nameEn", type:"text", label:"Name (English)"},
+    {k:"basic.nameZh", type:"text", label:"Name (中文)"},
+    {k:"category", type:"text", label:"Category Key (slug)"},
+    {k:"categoryLabel", type:"text", label:"Category Label (display)"},
+    {k:"media.mainImage", type:"image", label:"Main Image"},
+    {k:"commerce.price", type:"text", label:"Price"},
+    {k:"commerce.moq", type:"text", label:"MOQ"},
+    {k:"commerce.leadTime", type:"text", label:"Lead Time"},
+    {k:"commerce.sample", type:"text", label:"Sample Policy"},
+    {k:"parameters.specification", type:"text", label:"Specification (L×W×H)"},
+    {k:"parameters.material", type:"text", label:"Material"},
+    {k:"parameters.layers", type:"text", label:"Layers"},
+    {k:"parameters.mainMaterialThickness", type:"text", label:"Main Material Thickness"},
+    {k:"parameters.surfaceTreatment", type:"text", label:"Surface Treatment (Zinc/Chrome/Powder)"},
+    {k:"parameters.capacityPerLayer", type:"text", label:"Capacity per Layer"},
+    {k:"parameters.volume", type:"text", label:"Volume (Litres)"},
+    {k:"parameters.capacity", type:"text", label:"Capacity (kg)"},
+    {k:"parameters.castors", type:"text", label:"Castors (inch)"},
+    {k:"parameters.bearing", type:"text", label:"Bearing"},
+    {k:"parameters.diameter", type:"text", label:"Diameter"}
+  ],
+  certs: [
+    {k:"title", type:"i18n", label:"Certification name"},
+    {k:"desc", type:"i18n", label:"Description"},
+    {k:"image", type:"image", label:"Certificate image"},
+    {k:"verifyLabel", type:"i18n", label:"Verify button label"},
+    {k:"verifyUrl", type:"text", label:"Verify URL"}
+  ],
+  staff_intel: [
+    {k:"cat", type:"text", label:"Category"},
+    {k:"t", type:"text", label:"Title"},
+    {k:"c", type:"text", label:"Content"}
+  ],
+  staff_sop: [
+    {k:"cat", type:"text", label:"Category"},
+    {k:"t", type:"text", label:"Title"},
+    {k:"c", type:"text", label:"Content"}
+  ]
+};
+
+function buildListEditor(key){
+  const arr = DATA[key] || [];
+  const schema = FIELD_SCHEMAS[key];
+  let html = `<div class="list-editor" id="listEditor_${esc(key)}">`;
+  arr.forEach((item,idx)=>{
+    // Yuanda 产品适配 thumb / title 显示
+    let thumb, titleText, subText;
+    if(key==="products" && isYuandaProduct(item)){
+      thumb = (item.media && item.media.mainImage) || (item.images && item.images[0]) || "";
+      titleText = (item.basic && (item.basic.nameEn || item.basic.nameZh)) || item.name || "(no name)";
+      subText = ((item.basic && item.basic.model) || item.sku || "") + " — " + (item.categoryLabel || item.category || "");
+    } else {
+      thumb = item.img || item.image || (item.images && item.images[0]) || "";
+      const titleField = item.title || item.name || item.t || item.sku || item.label || "";
+      titleText = (typeof titleField==="object") ? L(titleField) : String(titleField);
+      subText = item.sku || L(item.sub||item.desc||"") || L(item.label||"") || "";
+    }
+    html += `
+      <div class="list-item" data-idx="${idx}">
+        ${thumb?`<div class="list-item-thumb"><img src="${esc(thumb)}"></div>`:'<div class="list-item-thumb" style="display:flex;align-items:center;justify-content:center;font-size:24px;color:#94A3B8">'+esc(item.icon||item.flag||"●")+'</div>'}
+        <div class="list-item-body">
+          <div class="list-item-title">${esc(titleText) || "(empty)"}</div>
+          <div class="list-item-sub">${esc(subText)}</div>
+        </div>
+        <div class="list-item-actions">
+          <button onclick="moveItem('${esc(key)}',${idx},-1)">↑</button>
+          <button onclick="moveItem('${esc(key)}',${idx},1)">↓</button>
+          <button onclick="editItem('${esc(key)}',${idx})">Edit</button>
+          <button class="del" onclick="delItem('${esc(key)}',${idx})">×</button>
+        </div>
+      </div>`;
+  });
+  html += `</div>`;
+  html += `<button class="add-btn" onclick="addItem('${esc(key)}')">+ Add Item</button>`;
+  return html;
+}
+
+function moveItem(key, idx, dir){
+  const arr = DATA[key];
+  const j = idx+dir;
+  if(j<0||j>=arr.length) return;
+  [arr[idx],arr[j]] = [arr[j],arr[idx]];
+  Q("#modalBody").innerHTML = buildListEditor(key);
+}
+function delItem(key, idx){
+  if(!confirm("Delete this item?")) return;
+  DATA[key].splice(idx,1);
+  Q("#modalBody").innerHTML = buildListEditor(key);
+}
+function addItem(key){
+  // 如果是 products 且现有产品都是 yuanda schema，新增也用 yuanda schema
+  const arr = DATA[key] || [];
+  const useYuanda = (key==="products" && arr.length>0 && isYuandaProduct(arr[0]));
+  const schema = useYuanda ? FIELD_SCHEMAS.products_yuanda : FIELD_SCHEMAS[key];
+  let blank;
+  if(useYuanda){
+    blank = {
+      id: "yd-new-"+Date.now(),
+      status: "draft",
+      category: "",
+      categoryLabel: "",
+      basic: {model:"", nameEn:"", nameZh:"", shortName:""},
+      parameters: {specification:"",material:"",layers:"",mainMaterialThickness:"",surfaceTreatment:"",capacityPerLayer:"",volume:"",capacity:"",castors:"",bearing:"",diameter:""},
+      commerce: {price:"Project quotation", moq:"Project-based", sample:"Sample on inquiry", leadTime:"TBC"},
+      media: {mainImage:""}
+    };
+  } else {
+    blank = {};
+    schema.forEach(f=>{
+      if(f.type==="i18n") blank[f.k] = {en:"",zh:"",de:"",es:""};
+      else if(f.type==="imagelist") blank[f.k] = [];
+      else if(f.type==="speclist") blank[f.k] = [];
+      else blank[f.k] = "";
+    });
+  }
+  DATA[key] = DATA[key]||[];
+  DATA[key].push(blank);
+  editItem(key, DATA[key].length-1);
+}
+
+/* 点号路径工具：支持 "basic.nameEn" "parameters.specification" 等嵌套 */
+function getByPath(obj, path){
+  if(!obj || !path) return undefined;
+  const parts = String(path).split(".");
+  let cur = obj;
+  for(const p of parts){
+    if(cur == null) return undefined;
+    cur = cur[p];
+  }
+  return cur;
+}
+function setByPath(obj, path, value){
+  if(!obj || !path) return;
+  const parts = String(path).split(".");
+  let cur = obj;
+  for(let i=0;i<parts.length-1;i++){
+    if(cur[parts[i]] == null || typeof cur[parts[i]] !== "object") cur[parts[i]] = {};
+    cur = cur[parts[i]];
+  }
+  cur[parts[parts.length-1]] = value;
+}
+
+function pickSchema(key, item){
+  // products 列表里，yuanda 产品用专用 schema
+  if(key === "products" && isYuandaProduct(item) && FIELD_SCHEMAS.products_yuanda){
+    return FIELD_SCHEMAS.products_yuanda;
+  }
+  return FIELD_SCHEMAS[key];
+}
+
+function editItem(key, idx){
+  const item = DATA[key][idx];
+  const schema = pickSchema(key, item);
+  const isYuanda = (key==="products" && isYuandaProduct(item));
+  let html = `<button class="btn-cancel" style="margin-bottom:14px" onclick="Q('#modalBody').innerHTML=buildListEditor('${esc(key)}')">← Back to list</button>`;
+  html += `<h4 style="margin-bottom:14px">Item #${idx+1}${isYuanda?' <span style="font-size:11px;font-weight:400;color:#94A3B8;background:#EEF2F7;padding:3px 8px;border-radius:4px;margin-left:8px">YUANDA SCHEMA</span>':''}</h4>`;
+  schema.forEach(f=>{
+    const val = f.k.includes(".") ? getByPath(item, f.k) : item[f.k];
+    html += renderField(key, idx, f, val);
+  });
+  Q("#modalBody").innerHTML = html;
+}
+
+function renderField(key, idx, f, val){
+  const id = `f_${key}_${idx}_${f.k.replace(/\./g,"_")}`;
+  const isPath = f.k.includes(".");
+  // 写值 JS 片段（支持点号路径）
+  const writeJs = isPath
+    ? `setByPath(DATA['${esc(key)}'][${idx}], '${esc(f.k)}', this.value)`
+    : `DATA['${esc(key)}'][${idx}]['${esc(f.k)}']=this.value`;
+  if(f.type==="text"){
+    return `<div class="field"><label>${esc(f.label)}</label><input id="${id}" value="${esc(val||'')}" oninput="${writeJs}"></div>`;
+  }
+  if(f.type==="i18n"){
+    const v = val||{};
+    // i18n 不支持点号路径（暂未需要），用旧写法
+    return `
+      <div class="field">
+        <label>${esc(f.label)} <span style="color:#94A3B8;font-weight:400">(EN main + 🌐 translate)</span></label>
+        <div class="field-row">
+          <input id="${id}_en" value="${esc(v.en||'')}" placeholder="English" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].en=this.value">
+          <button class="translate-btn" onclick="autoTranslate('${esc(key)}',${idx},'${esc(f.k)}')">🌐 Translate</button>
+          <button class="expand-btn" onclick="this.nextElementSibling.classList.toggle('open');this.textContent=this.nextElementSibling.classList.contains('open')?'▴':'▾'">▾</button>
+          <div class="lang-extra">
+            <div class="field"><label>中文 (ZH)</label><input value="${esc(v.zh||'')}" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].zh=this.value"></div>
+            <div class="field"><label>Deutsch (DE)</label><input value="${esc(v.de||'')}" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].de=this.value"></div>
+            <div class="field"><label>Espanol (ES)</label><input value="${esc(v.es||'')}" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].es=this.value"></div>
+          </div>
+        </div>
+      </div>`;
+  }
+  if(f.type==="image"){
+    const uploadJs = isPath ? `uploadImagePath('${esc(key)}',${idx},'${esc(f.k)}')` : `uploadImage('${esc(key)}',${idx},'${esc(f.k)}',null)`;
+    return `
+      <div class="field">
+        <label>${esc(f.label)}</label>
+        <div class="field-row">
+          <input id="${id}" value="${esc(val||'')}" placeholder="image path or paste URL" oninput="${writeJs}">
+          <button class="upload-btn" onclick="${uploadJs}">📤 Upload</button>
+        </div>
+        ${val?`<img src="${esc(val)}" style="max-width:200px;margin-top:8px;border-radius:6px;border:1px solid #E2E8F0" onerror="this.style.opacity=.3">`:''}
+      </div>`;
+  }
+  if(f.type==="imagelist"){
+    const arr = val||[];
+    return `
+      <div class="field">
+        <label>${esc(f.label)} <span style="color:#94A3B8;font-weight:400">(${arr.length}/10)</span></label>
+        <div id="imglist_${id}">
+        ${arr.map((im,i)=>`<div class="field-row" style="margin-bottom:6px"><input value="${esc(im)}" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'][${i}]=this.value;document.getElementById('imgthumb_${id}_${i}').src=this.value"><button class="btn-cancel" style="padding:6px 10px" onclick="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].splice(${i},1);editItem('${esc(key)}',${idx})">×</button></div><img id="imgthumb_${id}_${i}" src="${esc(im)}" style="max-width:120px;margin:0 0 10px;border-radius:4px;border:1px solid #E2E8F0">`).join('')}
+        </div>
+        <div class="field-row">
+          <button class="upload-btn" onclick="uploadImage('${esc(key)}',${idx},'${esc(f.k)}',-1)">📤 Add Image</button>
+        </div>
+      </div>`;
+  }
+  if(f.type==="speclist"){
+    const arr = val||[];
+    let h = `<div class="field"><label>${esc(f.label)}</label><div id="speclist_${id}">`;
+    arr.forEach((s,i)=>{
+      h += `<div style="display:grid;grid-template-columns:1fr 1fr auto;gap:6px;margin-bottom:6px">
+        <input value="${esc(L(s.k||{}))}" placeholder="Key (EN)" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'][${i}].k.en=this.value">
+        <input value="${esc(s.v||'')}" placeholder="Value" oninput="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'][${i}].v=this.value">
+        <button class="btn-cancel" style="padding:6px 10px" onclick="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].splice(${i},1);editItem('${esc(key)}',${idx})">×</button>
+      </div>`;
+    });
+    h += `</div>
+      <button class="add-btn" style="padding:6px 12px;font-size:12px" onclick="DATA['${esc(key)}'][${idx}]['${esc(f.k)}'].push({k:{en:'',zh:'',de:'',es:''},v:''});editItem('${esc(key)}',${idx})">+ Add Spec</button>
+    </div>`;
+    return h;
+  }
+  return "";
+}
+
+/* ===== Translate ===== */
+async function autoTranslate(key, idx, fld){
+  const obj = DATA[key][idx][fld];
+  const src = obj.en;
+  if(!src){ toast("Fill English first"); return; }
+  toast("Translating...");
+  const tries = [
+    {lang:"zh", url:`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=${encodeURIComponent(src)}`},
+    {lang:"de", url:`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=de&dt=t&q=${encodeURIComponent(src)}`},
+    {lang:"es", url:`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q=${encodeURIComponent(src)}`}
+  ];
+  for(const t of tries){
+    try{
+      const r = await fetch(t.url);
+      const j = await r.json();
+      const tx = j[0].map(seg=>seg[0]).join("");
+      DATA[key][idx][fld][t.lang] = tx;
+    }catch(e){ console.error(e); }
+  }
+  toast("Translated EN→ZH/DE/ES");
+  editItem(key, idx);
+}
+
+/* ===== Upload ===== */
+// 上传图片到嵌套路径（yuanda schema 用，如 media.mainImage）
+function uploadImagePath(key, idx, path){
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "image/*";
+  input.onchange = async ()=>{
+    const file = input.files[0];
+    if(!file) return;
+    const ext = file.name.split('.').pop().toLowerCase();
+    const dest = `uploads/u${Date.now()}.${ext}`;
+    toast("Uploading...");
+    const ok = await ghPutBinary(dest, file);
+    if(!ok) return;
+    setByPath(DATA[key][idx], path, dest);
+    editItem(key, idx);
+    toast("Uploaded.");
+  };
+  input.click();
+}
+
+function uploadImage(key, idx, fld, arrIdx){
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "image/*";
+  input.onchange = async ()=>{
+    const file = input.files[0];
+    if(!file) return;
+    const ext = file.name.split('.').pop().toLowerCase();
+    const path = `uploads/u${Date.now()}.${ext}`;
+    toast("Uploading...");
+    const ok = await ghPutBinary(path, file);
+    if(!ok) return;
+    if(arrIdx===-1){
+      DATA[key][idx][fld] = DATA[key][idx][fld]||[];
+      DATA[key][idx][fld].push(path);
+    } else if(arrIdx==null){
+      DATA[key][idx][fld] = path;
+    } else {
+      DATA[key][idx][fld][arrIdx] = path;
+    }
+    editItem(key, idx);
+    toast("Uploaded.");
+  };
+  input.click();
+}
+
+/* ===== GitHub API ===== */
+async function ghGet(path){
+  const r = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${REPO_BRANCH}`, {
+    headers: {Authorization: "token "+localStorage.getItem(BRAND+"_admin_token")}
+  });
+  if(r.status===404) return null;
+  if(!r.ok) throw new Error("GitHub GET failed: "+r.status);
+  return r.json();
+}
+async function ghPut(path, contentBase64, msg){
+  let sha=null;
+  try{ const ex=await ghGet(path); if(ex) sha=ex.sha; }catch(e){}
+  const body = {message: msg||"update "+path, content: contentBase64, branch: REPO_BRANCH};
+  if(sha) body.sha = sha;
+  const r = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`, {
+    method:"PUT",
+    headers: {Authorization: "token "+localStorage.getItem(BRAND+"_admin_token"), "Content-Type":"application/json"},
+    body: JSON.stringify(body)
+  });
+  if(!r.ok){ const t=await r.text(); alert("GitHub PUT failed: "+t); return false; }
+  return true;
+}
+async function ghPutBinary(path, file){
+  return new Promise((resolve)=>{
+    const reader = new FileReader();
+    reader.onload = async ()=>{
+      const b64 = reader.result.split(",")[1];
+      const ok = await ghPut(path, b64, "upload "+path);
+      resolve(ok);
+    };
+    reader.readAsDataURL(file);
+  });
+}
+async function saveModal(){
+  if(!isAdmin()){ closeModal(); return; }
+  toast("Saving to GitHub...");
+  const json = JSON.stringify(DATA, null, 2);
+  const b64 = btoa(unescape(encodeURIComponent(json)));
+  const ok = await ghPut("data.json", b64, "admin: edit "+CURRENT_EDIT);
+  if(ok){ toast("Saved. CDN may take 1-3 min."); closeModal(); renderAll(); }
+}
+
+function toast(msg){
+  const t = Q("#toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(window._tt);
+  window._tt = setTimeout(()=>t.classList.remove("show"), 2400);
+}
+
+load();
+</script>
+</body>
+</html>
