@@ -1199,6 +1199,11 @@ const YUANDA_PARAM_LABELS = {
   castors:          {en:"Castors",                  zh:"脚轮",  de:"Rollen",         es:"Ruedas",         fr:"Roulettes",     it:"Ruote",       ru:"Колёса",         pt:"Rodízios",      ja:"キャスター", ko:"캐스터",   ar:"العجلات",    nl:"Wieltjes",     tr:"Tekerlek",      th:"ล้อ",          vi:"Bánh xe", hi:"पहिये"},
   bearing:          {en:"Bearing",                  zh:"轴承",  de:"Lager",          es:"Rodamiento",     fr:"Roulement",     it:"Cuscinetto",  ru:"Подшипник",      pt:"Rolamento",     ja:"ベアリング", ko:"베어링",   ar:"المحمل",     nl:"Lager",        tr:"Yatak",         th:"แบริ่ง",      vi:"Vòng bi", hi:"बेयरिंग"},
   diameter:         {en:"Diameter",                 zh:"直径",  de:"Durchmesser",    es:"Diámetro",       fr:"Diamètre",      it:"Diametro",    ru:"Диаметр",        pt:"Diâmetro",      ja:"直径",     ko:"직경",      ar:"القطر",      nl:"Diameter",     tr:"Çap",           th:"เส้นผ่านศูนย์กลาง", vi:"Đường kính", hi:"व्यास"},
+  // === JCT-specific parameter labels (16 langs) ===
+  features:         {en:"Features",       zh:"产品特性", de:"Merkmale",       es:"Características", fr:"Caractéristiques", it:"Caratteristiche", ru:"Характеристики",  pt:"Características", ja:"特徴",     ko:"특징",      ar:"الميزات",         nl:"Kenmerken",   tr:"Özellikler",  th:"คุณสมบัติ",   vi:"Tính năng",    hi:"विशेषताएं"},
+  certification:    {en:"Certification",  zh:"认证",     de:"Zertifizierung", es:"Certificación",   fr:"Certification",    it:"Certificazione",  ru:"Сертификация",    pt:"Certificação",    ja:"認証",     ko:"인증",      ar:"الشهادات",        nl:"Certificering", tr:"Sertifikasyon", th:"การรับรอง",  vi:"Chứng nhận",   hi:"प्रमाणन"},
+  warranty:         {en:"Warranty",       zh:"质保",     de:"Garantie",       es:"Garantía",        fr:"Garantie",         it:"Garanzia",        ru:"Гарантия",        pt:"Garantia",        ja:"保証",     ko:"보증",      ar:"الضمان",           nl:"Garantie",    tr:"Garanti",     th:"การรับประกัน", vi:"Bảo hành",     hi:"वारंटी"},
+  application:      {en:"Application",    zh:"适用场景", de:"Anwendung",      es:"Aplicación",      fr:"Application",      it:"Applicazione",    ru:"Применение",      pt:"Aplicação",       ja:"用途",     ko:"용도",      ar:"التطبيق",          nl:"Toepassing",  tr:"Uygulama",    th:"การใช้งาน",   vi:"Ứng dụng",     hi:"अनुप्रयोग"},
 };
 const YUANDA_PARAM_KEYS = Object.keys(YUANDA_PARAM_LABELS);
 
@@ -1432,8 +1437,8 @@ function buildProductInfoHtml(p, raw){
     <table class="pd-specs-table">
       <tbody>
         ${p.specs.map(s=>`<tr><td>${esc(L(s.k))}</td><td>${esc(s.v)}</td></tr>`).join('')}
-        ${p.leadTime ? `<tr><td>Lead Time</td><td>${esc(p.leadTime)}</td></tr>`:''}
-        ${p.sample   ? `<tr><td>Sample</td><td>${esc(p.sample)}</td></tr>`:''}
+        ${p.leadTime ? `<tr><td>${esc(L(DATA.ui.labelLeadTime)||'Lead Time')}</td><td>${esc(p.leadTime)}</td></tr>`:''}
+        ${p.sample   ? `<tr><td>${esc(L(DATA.ui.labelSample)||'Sample')}</td><td>${esc(p.sample)}</td></tr>`:''}
       </tbody>
     </table>` : `
     <div style="padding:20px;background:#FAFBFC;border:1px dashed var(--c-line);border-radius:8px;color:var(--c-ink-soft);font-size:14px;line-height:1.6">
